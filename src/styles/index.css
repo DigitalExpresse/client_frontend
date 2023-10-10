@@ -43,8 +43,8 @@
   --grey: #4D4D4D;
 
   /* Familles de polices */
-    --font-family-heading: 'Lora', sans-serif;
-    --font-family-body: 'Open Sans', sans-serif;
+  --font-family-heading: 'Lora', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
 
   /* Tailles de police pour téléphones */
   --font-size-heading1-mobile: 30px;
@@ -147,7 +147,7 @@
 }
 
 html {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 /* index.css */
 body {

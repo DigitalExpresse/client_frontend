@@ -32,7 +32,7 @@ const Navbar = () => {
 
                     { process.env.REACT_APP_DATA_MODE === 'static' ?
                         <a href={"tel:" + restaurantInfo.telNumber} className="uppercase mx-3 border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
-                            :
+                        :
                         <button onClick={() => setModalReservationOpen(true)} className="mx-3 border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
                     }
 
@@ -40,7 +40,7 @@ const Navbar = () => {
                     <i className={navbarOpen ? "bi bi-x text-3xl hover:cursor-pointer sm:hidden animation-fadeIn" : "hidden"} onClick={() => closeNavbar()}></i>
                 </div>
 
-            {/*  Au clic du de l'icone menu, on affiche le menu burger  */}
+                {/*  Au clic du de l'icone menu, on affiche le menu burger  */}
 
                 <div className={ navbarOpen ? "fadeIn bg-dark text-white absolute pt-14 top-14 left-0 w-full text-center sm:hidden h-screen" : "hidden" }>
 
