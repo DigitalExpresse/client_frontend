@@ -2,8 +2,8 @@ import React from 'react';
 import './legalsPage.css';
 import legals from "../../dataBrut/legals.json";
 
-
-interface CookieProps {}
+interface CookieProps {
+}
 
 const PoliticCookie: React.FC<CookieProps> = () => {
     return (
@@ -24,7 +24,9 @@ const PoliticCookie: React.FC<CookieProps> = () => {
                 <h2 className="section-title-legals">Qu'est-ce qu'un cookie ?</h2>
                 <p className="section-text-legals">
                     Un cookie est un petit fichier texte stocké sur votre ordinateur ou
-                    votre appareil mobile lorsque vous visitez un site web. Il permet au
+                    votre appareil mobile lorsque vous visitez un site web.
+                    <br/>
+                    Il permet au
                     site web de mémoriser vos actions et préférences (telles que la
                     connexion, la langue, la taille de la police et d'autres préférences
                     d'affichage) sur une période de temps, de sorte que vous n'ayez pas à
@@ -68,6 +70,19 @@ const PoliticCookie: React.FC<CookieProps> = () => {
                     </li>
                 </ul>
 
+                <h2 className="section-title-legals">Comment contrôler les cookies ?</h2>
+                <p className="section-text-legals">Vous pouvez contrôler et/ou supprimer les cookies comme vous le
+                    souhaitez. Pour plus d'informations, consultez
+                    <a className={"underline"} href="https://aboutcookies.org"> aboutcookies.org</a>.
+                    <br/>
+                    Vous avez la possibilité de supprimer tous les cookies déjà stockés sur votre ordinateur et de
+                    configurer la plupart des navigateurs pour
+                    qu'ils les bloquent.
+                    <br/>
+                    Toutefois, dans ce cas, vous devrez peut-être indiquer vous-même certaines
+                    préférences chaque fois que vous vous rendrez sur un site, et certains services et fonctionnalités
+                    risquent de ne pas être accessibles.</p>
+
                 <h2 className="section-title-legals">Consentement</h2>
                 <p className="section-text-legals"> En utilisant notre site web, vous consentez à ce que nous placions
                     des cookies sur votre ordinateur ou votre appareil mobile, comme décrit ci-dessus. Toutefois, vous
@@ -78,7 +93,6 @@ const PoliticCookie: React.FC<CookieProps> = () => {
                     politique de cookies, veuillez nous contacter à l'adresse suivante :{' '}
                     <a className={"underline"} href={`mailto:${legals.company_email}`}>{legals.company_email}</a>
                 </p>
-
 
             </div>
         </div>

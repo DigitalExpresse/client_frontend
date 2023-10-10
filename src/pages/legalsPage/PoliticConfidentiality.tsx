@@ -230,11 +230,9 @@ export const PoliticConfidentiality = () => {
                         la
                         protection des données</h2>
                     <p className="section-text-legals">
-                        Article 4.1 : Le responsable du traitement des données
-                        Les données à caractère personnelles sont collectées par [raison ou
-                        dénomination sociale de l’entreprise], [forme juridique] au capital
-                        de [montant du capital social], dont le numéro d’immatriculation est
-                        le [indiquez votre numéro RCS].
+                       <b>Article 4.1</b> : Le responsable du traitement des données
+                        Les données à caractère personnelles sont collectées par {legals.company_name}, dont le numéro d’immatriculation est
+                        le {legals.company_siret}.
                         <br/>
                         Le responsable du traitement des données à caractère personnel peut
                         être contacté de la manière suivante :
@@ -242,30 +240,31 @@ export const PoliticConfidentiality = () => {
                     <ul>
                         <li>
                             <p className="section-text-legals">
-                                Par courrier à l’adresse : [indiquez l’adresse du siège social] ;
+                                Par courrier à l’adresse : {legals.company_address}, {legals.company_zip} {legals.company_city};
                             </p>
                         </li>
                         <li>
                             <p className="section-text-legals">
-                                Par téléphone, au [numéro de téléphone] ;
+                                Par téléphone, au : {legals.company_phone};
                             </p>
                         </li>
                         <li>
                             <p className="section-text-legals">
-                                Par mail : [email du responsable du traitement des données].
+                                Par mail : {legals.company_email}.
                             </p>
                         </li>
                     </ul>
                     <p className="section-text-legals">
-                        Article 4.2 : Le délégué à la protection des données
+                        <b>Article 4.2</b> : Le délégué à la protection des données
                         Le délégué à la protection des données de l’entreprise ou du
                         responsable est :
                     </p>
                     <ul>
                         <li>
                             <p className="section-text-legals">
-                                [Indiquez l’identité, l’adresse, le numéro de téléphone et/ou
-                                l’adresse email du DPO]
+                                Isoardi Marius
+                                <br/>
+                                06 12 34 56 78
                             </p>
                         </li>
                     </ul>
@@ -322,9 +321,7 @@ export const PoliticConfidentiality = () => {
                         </li>
                     </ul>
                     <p className="section-text-legals">
-                        Pour exercer vos droits, veuillez adresser votre courrier à [Nom et
-                        adresse de l’entreprise] ou par mail à [Insérer l’adresse e-mail du
-                        Délégué à la protection des données]
+                        Pour exercer vos droits, veuillez adresser votre courrier à {legals.company_name} {legals.company_address}, {legals.company_zip} {legals.company_city}, ou par mail à {legals.company_email}.
                     </p>
                     <p className="section-text-legals">
                         Afin que le responsable du traitement des données puisse faire droit
@@ -356,7 +353,7 @@ export const PoliticConfidentiality = () => {
                         l’en prévenir formellement.
                         <br/>
                         <br/>
-                        La présente politique, éditée le [date de mise en ligne], a été mise
+                        La présente politique, éditée le {legals.maj_date}, a été mise
                         à jour le {legals.maj_date}.
                     </p>
                 </div>

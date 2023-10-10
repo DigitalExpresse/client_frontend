@@ -20,13 +20,13 @@ const Navbar = () => {
         <header>
             <div className="navbar fixed z-40 px-3 md:!px-8 py-2 flex justify-between items-center w-full bg-white md:py-3">
                 <Link to="/">
-                    <p onClick={() => setNavbarOpen(false)} className="text-xl font-extrabold" title="Accueil de notre site" >{restaurantInfo.name}</p>
+                    <p onClick={() => setNavbarOpen(false)} className="text-xl font-bold" title="Accueil de notre site" >{restaurantInfo.name}</p>
                 </Link>
                 <div className="flex items-center">
 
                     <div className="hidden sm:block">
                         <Link to={'/carte'} className="m-2 font-bold hover:text-tertiary">Carte & menus</Link>
-                        <Link className="m-2 font-extrabold hover:text-tertiary" to="/galerie">Photos</Link>
+                        <Link className="m-2 font-bold hover:text-tertiary" to="/galerie">Photos</Link>
                         <a className="m-2 font-bold hover:text-tertiary" href="/#horaires">Accès / Contact</a>
                     </div>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
                         { process.env.REACT_APP_DATA_MODE === 'static' ?
-                            <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-extrabold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
+                            <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
                             :
                             <button onClick={() => {
                                 setModalReservationOpen(true)
