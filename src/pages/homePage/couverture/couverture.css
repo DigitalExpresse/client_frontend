@@ -1,0 +1,29 @@
+.background-couverture {
+    background-image: url("couverture_50.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 94vh;
+}
+
+.background-couverture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.3);
+}
+
+.button-couverture {
+    max-width: 220px;
+}
+
+@media screen and (max-width: 768px) {
+    .background-couverture {
+        background-image: url("couverture_50.webp");
+    }
+}
+
+

@@ -1,0 +1,51 @@
+.container-legals {
+    padding-top: 50px;
+    background-color: rgba(232, 232, 232, 0.65);
+    padding-bottom: 40px;
+}
+
+.section-legals {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title-legals {
+    font-size: 22px;
+    color: #1643ab;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.legals-subtitle {
+    margin-bottom: 10px;
+}
+
+.section-title-legals {
+    font-size: 20px;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.section-text-legals {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */
+
+
+
+
+
+
+
+
+
+
+

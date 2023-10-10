@@ -1,0 +1,357 @@
+{
+  "openingHours": [
+    {"label": "Lundi-Vendredi", "horaires": ["08:00", "02:00"]},
+    {"label": "Samedi-Dimanche", "horaires": ["08:00", "02:00"]}
+  ],
+
+  "menus": [
+    {
+      "id": 6,
+      "name": "Menu enfant",
+      "description": "Une très belle salade, un plat et un dessert au choix",
+      "price": 13,
+      "categories": [
+        {"category":{"id": 1, "name":  "Plats"}},
+        {"category":{"id": 2, "name":  "Desserts"}},
+        {"category":{"id": 3, "name":  "Boissons"}}
+      ]
+    },
+
+    {
+      "id": 7,
+      "name": "La Formule du midi ",
+      "description": "Du lundi au vendredi, renseignez-vous auprès de votre serveur pour connaître les plats du jour",
+      "price": 17,
+      "categories": [
+        {"category":{"id": 1, "name":  "Plats"}},
+        {"category":{"id": 2, "name":  "Desserts"}}
+      ]
+    }
+
+  ],
+
+  "cards": [
+      {
+      "id": 1,
+      "name": "Les grandes salades",
+      "description": "",
+      "categories": [{"category": null}]
+    },
+    {
+      "id": 2,
+      "name": "Côté terre",
+      "description": "Côté terre",
+      "categories": [{"category": null}]
+    },
+    {
+      "id": 3,
+      "name": "Côté mer",
+      "description": "Côté mer",
+      "categories": [{"category": null}]
+    },
+
+    {
+      "id": 5,
+      "name": "Pâtes & Risottos",
+      "description": "Pâtes & Risottos / Pasta & Risotto",
+      "categories": [{"category": null}]
+    },
+
+    {
+      "id": 4,
+      "name": "Desserts",
+      "description": "Desserts",
+      "categories": [{"category": null}]
+    }
+  ],
+
+  "menusProduct": [
+    {"id": 1, "menuId": 6, "categoryId": 1, "productId": 32},
+    {"id": 2, "menuId": 6, "categoryId": 1, "productId": 33},
+    {"id": 3, "menuId": 6, "categoryId": 1, "productId": 34},
+    {"id": 4, "menuId": 6, "categoryId": 2, "productId": 35},
+    {"id": 5, "menuId": 6, "categoryId": 2, "productId": 36},
+    {"id": 6, "menuId": 6, "categoryId": 3, "productId": 37},
+    {"id": 7, "menuId": 7, "categoryId": 1, "productId": 38},
+    {"id": 8, "menuId": 7, "categoryId": 2, "productId": 39}
+    ],
+
+  "cardsProduct": [
+    {"id": 1, "cardId": 1, "categoryId": null, "productId": 1},
+    {"id": 2, "cardId": 1, "categoryId": null, "productId": 2},
+    {"id": 3, "cardId": 1, "categoryId": null, "productId": 3},
+    {"id": 4, "cardId": 1, "categoryId": null, "productId": 4},
+    {"id": 5, "cardId": 1, "categoryId": null, "productId": 5},
+    {"id": 6, "cardId": 1, "categoryId": null, "productId": 6},
+    {"id": 7, "cardId": 1, "categoryId": null, "productId": 7},
+    {"id": 8, "cardId": 1, "categoryId": null, "productId": 8},
+    {"id": 9, "cardId": 1, "categoryId": null, "productId": 9},
+    {"id": 10, "cardId": 1, "categoryId": null, "productId": 10},
+    {"id": 11, "cardId": 1, "categoryId": null, "productId": 11},
+    {"id": 12, "cardId": 2, "categoryId": null, "productId": 12},
+    {"id": 13, "cardId": 2, "categoryId": null, "productId": 13},
+    {"id": 14, "cardId": 2, "categoryId": null, "productId": 14},
+    {"id": 15, "cardId": 2, "categoryId": null, "productId": 15},
+    {"id": 16, "cardId": 2, "categoryId": null, "productId": 16},
+    {"id": 17, "cardId": 2, "categoryId": null, "productId": 17},
+    {"id": 18, "cardId": 3, "categoryId": null, "productId": 18},
+    {"id": 19, "cardId": 3, "categoryId": null, "productId": 19},
+    {"id": 20, "cardId": 3, "categoryId": null, "productId": 20},
+    {"id": 21, "cardId": 4, "categoryId": null, "productId": 21},
+    {"id": 22, "cardId": 4, "categoryId": null, "productId": 22},
+    {"id": 23, "cardId": 4, "categoryId": null, "productId": 23},
+    {"id": 24, "cardId": 4, "categoryId": null, "productId": 24},
+    {"id": 25, "cardId": 4, "categoryId": null, "productId": 25},
+    {"id": 26, "cardId": 4, "categoryId": null, "productId": 26},
+    {"id": 27, "cardId": 4, "categoryId": null, "productId": 27},
+    {"id": 28, "cardId": 5, "categoryId": null, "productId": 28},
+    {"id": 29, "cardId": 5, "categoryId": null, "productId": 29},
+    {"id": 30, "cardId": 5, "categoryId": null, "productId": 30},
+    {"id": 31, "cardId": 5, "categoryId": null, "productId": 31}
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Planche à partager",
+      "description": "guacamole, nachos, tacos avec du bœuf et hogao (sauce à l'ail et tomate)",
+      "price": 16
+    },
+    {
+      "id": 2,
+      "name": "La César",
+      "description": "lanières de poulet, copeaux de parmesan, œuf dur, croûtons, laitue romaine et sauce César",
+      "price": 17
+    },
+    {
+      "id": 3,
+      "name": "Ceviche de thon",
+      "description": "thon, oignon rouge, poivron rouge, coriandre, graines de sésame, mangue, jus de citron vert, lait de tigre (gingembre, ail, sauce soja, vinaigre de riz)",
+      "price": 19
+    },
+    {
+      "id": 4,
+      "name": "La Saint-Marcellin",
+      "description": "Fromage Saint-Marcellin grillé avec du miel de lavande, sur une tranche de pain paysan, fruits de saison, amandes effilées, olives et laitue",
+      "price": 18
+    },
+    {
+      "id": 5,
+      "name": "Salade Bouddoir",
+      "description": "crevettes sautées, ceviche de thon, saumon à la scandinave, lanières d'avocat, tomate, graines de sésame, mélange de laitues et pain grillé",
+      "price": 22
+    },
+    {
+      "id": 6,
+      "name": "Salade thaï",
+      "description": "avec du bœuf mariné, des nouilles de blé, des pousses de soja, des crudités et une sauce soja sucrée",
+      "price": 18
+    },
+    {
+      "id": 7,
+      "name": "Le tartare de saumon Label Rouge",
+      "description": "sur un lit d'avocat, zeste de citron vert, coriandre, échalotes et pain grillé",
+      "price": 19
+    },
+    {
+      "id": 8,
+      "name": "La burrata",
+      "description": "tomate ancienne, olives italiennes et pesto",
+      "price": 17
+    },
+    {
+      "id": 9,
+      "name": "La quinoa verte",
+      "description": "quinoa, fromage feta, melon, concombre, tomate, olives, vinaigrette à la menthe et coriandre",
+      "price": 16
+    },
+    {
+      "id": 10,
+      "name": "Bol de poke au saumon",
+      "description": "riz, tartare de saumon Label Rouge, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
+      "price": 18
+    },
+    {
+      "id": 11,
+      "name": "Bol de poke végétalien",
+      "description": "riz, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
+      "price": 15
+    },
+    {
+      "id": 12,
+      "name": "La belle entrecôte",
+      "description": "(environ 300 gr) Frites fraîches, bouquet de mesclun et sauce aux choix : poivre vert, roquefort ou béarnaise.",
+      "price": 26
+    },
+    {
+      "id": 13,
+      "name": "Le tartare de bœuf charolais coupé au couteau, préparé à l’italienne",
+      "description": "(180gr) Viande fraîche pur bœuf d’origine française, tomates confites, copeaux de parmesan, pignons de pin, pesto, frites fraîches et salade.",
+      "price": 19
+    },
+    {
+      "id": 14,
+      "name": "Côtelettes d’agneau à la plancha",
+      "description": "Pommes de terre grenailles, légumes grillés et sauce grecque).",
+      "price": 24
+    },
+    {
+      "id": 15,
+      "name": "Tagliata de bœuf Angus",
+      "description": "Mesclun, copeaux de parmesan, pesto, frites fraîches.",
+      "price": 22
+    },
+    {
+      "id": 16,
+      "name": "Le Bouddoir Burger",
+      "description": "Pains de boulangerie, steak haché 100% pur bœuf d’origine française, oignons confits au vinaigre de framboise, cheddar, cornichons, salade, tomate et sauce barbecue.",
+      "price": 19
+    },
+    {
+      "id": 17,
+      "name": "Pluma de porc grillée",
+      "description": "Sauce chimichurri, pommes de terre grenailles et chips de banane plantin.",
+      "price": 22
+    },
+    {
+      "id": 18,
+      "name": "Dos de cabillaud rôti",
+      "description": "Légumes grillés, sauce chimichurri et chips de banane plantin.",
+      "price": 24
+    },
+    {
+      "id": 19,
+      "name": "Le fish & chips",
+      "description": "Filet de cabillaud en panure, sauce tartare, frites fraîches et salade mêlée.",
+      "price": 18
+    },
+    {
+      "id": 20,
+      "name": "Tataki de thon",
+      "description": "Nouilles de blé au curry vert sauce maïs et citron verts.",
+      "price": 25
+    },
+
+    {
+      "id": 21,
+      "name": "Tiramisu traditionnel",
+      "description": "copeaux de chocolat.",
+      "price": 8
+    },
+    {
+      "id": 22,
+      "name": "Crème brûlée à la vanille",
+      "description": null,
+      "price": 8
+    },
+    {
+      "id": 23,
+      "name": "Mousse au chocolat",
+      "description": "et son quatuor de gourmandises",
+      "price": 8
+    },
+    {
+      "id": 24,
+      "name": "Pavlova aux fruits rouges",
+      "description": null,
+      "price": 8
+    },
+    {
+      "id": 25,
+      "name": "Assortiment de fromages",
+      "description": null,
+      "price": 9
+    },
+    {
+      "id": 26,
+      "name": "Dessert du jour",
+      "description": null,
+      "price": 7
+    },
+    {
+      "id": 27,
+      "name": "Café ou thé gourmand",
+      "description": "et son quatuor de gourmandises",
+      "price": 9.5
+    },
+
+    {
+      "id": 28,
+      "name": "Risotto à la truffe",
+      "description": null,
+      "price": 19
+    },
+    {
+      "id": 29,
+      "name": "Linguines au pesto, mozzarella di buffala gratinée",
+      "description": null,
+      "price": 18
+    },
+    {
+      "id": 30,
+      "name": "Linguines aux noix de Saint Jacques et gambas snackées, crème de crustacés",
+      "description": null,
+      "price": 22
+    },
+    {
+      "id": 31,
+      "name": "Risotto aux gambas",
+      "description": null,
+      "price": 19
+    },
+    {
+      "id": 32,
+        "name": "Nuggets de poulet",
+        "description": "frites fraîches",
+        "price": 19
+    },
+
+    {
+      "id": 33,
+        "name": "Steak haché frais",
+        "description": "frites fraîches",
+        "price": 19
+    },
+
+    {
+      "id": 34,
+        "name": "Pâtes au pesto",
+        "description": null,
+        "price": 19
+    },
+
+    {
+      "id": 35,
+        "name": "Glace enfant",
+        "description": null,
+        "price": 19
+    },
+
+    {
+        "id": 36,
+            "name": "Pom’pote",
+            "description": null,
+            "price": 19
+    },
+
+    {
+        "id": 37,
+            "name": "Sirop au choix",
+            "description": null,
+            "price": 19
+    },
+
+    {
+      "id": 38,
+      "name": "Plat du jour ( 14.80 € sans la formule )",
+      "description": null,
+      "price": 14.80
+    },
+
+    {
+        "id": 39,
+        "name": "Dessert du jour ( 7 € sans la formule )",
+        "description": null,
+        "price": 7
+    }
+  ]
+}

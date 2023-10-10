@@ -1,0 +1,45 @@
+@import '../../../styles/index.css';
+
+.menu-nav {
+    position: sticky;
+    z-index: 30;
+    top: 45px;
+    left: 0;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    min-height: 50px;
+    padding: 5px 0;
+    background-color: #FFF;
+    font-family: var(--font-family-heading);
+}
+
+.menu-nav::before, .menu-nav::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    height: 100%;
+    width: 25px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .menu-nav::before, .menu-nav::after {
+        width: 35px!important;
+    }
+}
+
+.menu-nav::before {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 10px, rgba(255, 255, 255, .8) 100%);;
+    left: 10px;
+}
+
+.menu-nav::after {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .8) 10px, rgba(255, 255, 255, 0) 100%);;
+    right: 15px;
+}
+
+.menu-nav a:active, .menu-nav a:focus, .menu-nav a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}

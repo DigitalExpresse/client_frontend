@@ -1,0 +1,15 @@
+.navbar-menu {
+    animation: fadeIn 300ms ease-in-out;
+}
+
+.navbar {
+    font-family: var(--font-family-heading);
+}
+
+.facebook-logo:hover {
+    color: #3b5998!important;
+}
+
+.instagram-logo:hover {
+    color: #b9acc0 !important;
+}
