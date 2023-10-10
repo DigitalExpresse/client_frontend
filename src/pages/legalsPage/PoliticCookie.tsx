@@ -1,18 +1,20 @@
 import React from 'react';
 import './legalsPage.css';
+import legals from "../../dataBrut/legals.json";
+
 
 interface CookieProps {}
 
-const Cookie: React.FC<CookieProps> = () => {
+const PoliticCookie: React.FC<CookieProps> = () => {
     return (
         <div className={"container-legals"}>
             <div className="section-legals">
                 <h1 className="title-legals">Politique de Cookies</h1>
-                <p className="legals-subtitle">Dernière mise à jour : [Date de la dernière mise à jour]</p>
+                <p className="legals-subtitle">Dernière mise à jour : {legals.maj_date}</p>
 
                 <h2 className="section-title-legals">Introduction</h2>
                 <p className="section-text-legals">
-                    Bienvenue sur [Votre Site Web] (le "Site"). Le Site utilise des cookies
+                    Bienvenue sur {legals.website_url} (le "Site"). Le Site utilise des cookies
                     pour améliorer votre expérience de navigation. Cette politique de
                     cookies explique ce que sont les cookies, comment nous les utilisons,
                     vos choix concernant les cookies, et d'autres informations importantes
@@ -74,7 +76,7 @@ const Cookie: React.FC<CookieProps> = () => {
                 <p className="section-text-legals">
                     Si vous avez des questions ou des préoccupations concernant notre
                     politique de cookies, veuillez nous contacter à l'adresse suivante :{' '}
-                    [Votre adresse e-mail de contact].
+                    <a className={"underline"} href={`mailto:${legals.company_email}`}>{legals.company_email}</a>
                 </p>
 
 
@@ -83,4 +85,4 @@ const Cookie: React.FC<CookieProps> = () => {
     );
 };
 
-export default Cookie;
+export default PoliticCookie;

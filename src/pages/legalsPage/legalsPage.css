@@ -16,19 +16,20 @@
 .title-legals {
     font-size: 22px;
     color: #1643ab;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .legals-subtitle {
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .section-title-legals {
     font-size: 20px;
     color: #3b3b3b;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .section-text-legals {

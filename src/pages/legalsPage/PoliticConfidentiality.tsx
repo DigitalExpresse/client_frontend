@@ -1,6 +1,6 @@
 import React from 'react';
 import './legalsPage.css';
-
+import legals from "../../dataBrut/legals.json";
 
 export const PoliticConfidentiality = () => {
     return (
@@ -8,9 +8,10 @@ export const PoliticConfidentiality = () => {
             <div className={"container-legals"}>
                 <div className="section-legals">
                     <h1 className="title-legals">Politique de confidentialité</h1>
-                    <p className="legals-subtitle">[Nom du site/de l’application]</p>
+                    <p className="legals-subtitle">Dernière mise à jour : {legals.maj_date}</p>
+                    <p className="legals-subtitle">{legals.website_url}</p>
 
-                    <h2 className="section-title-legals">ARTICLE 1 : PRÉAMBULE</h2>
+                    <h2 className="section-title-legals">Article 1 : Préambule</h2>
                     <p className="section-text-legals">
                         La présente politique de confidentialité a pour but d’informer les
                         utilisateurs du site :
@@ -42,21 +43,16 @@ export const PoliticConfidentiality = () => {
                                 Sur les destinataires de ces données personnelles ;
                             </p>
                         </li>
-                        <li>
-                            <p className="section-text-legals">
-                                Sur la politique du site en matière de cookies.
-                            </p>
-                        </li>
                     </ul>
                     <p className="section-text-legals">
                         Cette politique complète les mentions légales et les Conditions
                         Générales d’Utilisation consultables par les utilisateurs à l’adresse
-                        suivante : [Insérer l’URL permettant d'accéder aux Conditions Générales
-                        d’Utilisation et aux mentions Légales]
+                        suivante : <a className={"underline"} href={legals.url_mentions_legals}>{legals.url_mentions_legals}</a>
                     </p>
 
-                    <h2 className="section-title-legals">ARTICLE 2 : PRINCIPES RELATIFS À LA COLLECTE ET AU TRAITEMENT DES
-                        DONNÉES PERSONNELLES</h2>
+                    <h2 className="section-title-legals">Article 2 : Principes relatifs à la collecte et au traitement
+                        des
+                        données personnelles</h2>
                     <p className="section-text-legals">
                         Conformément à l’article 5 du Règlement européen 2016/679, les données
                         à caractère personnel sont :
@@ -140,7 +136,7 @@ export const PoliticConfidentiality = () => {
                                 physique ;
                             </p>
                         </li>
-                       <li>
+                        <li>
                             <p className="section-text-legals">
                                 Le traitement est nécessaire à l'exécution d'une mission
                                 d'intérêt public ou relevant de l'exercice de l'autorité
@@ -159,17 +155,18 @@ export const PoliticConfidentiality = () => {
                         </li>
                     </ul>
 
-                    <h2 className="section-title-legals">ARTICLE 3 : DONNÉES À CARACTÈRE PERSONNEL COLLECTÉES ET TRAITÉES
-                        DANS LE CADRE DE LA NAVIGATION SUR LE SITE</h2>
+                    <h2 className="section-title-legals">Article 3 : Données à caractère personnel collectées et
+                        traitées
+                        dans le cadre de la navigation sur le site</h2>
                     <p className="section-text-legals">
-                        Article 3.1 : Données collectées
+                        <b>Article 3.1 :</b> Données collectées
                         Les données personnelles collectées dans le cadre de notre activité
                         sont les suivantes :
                     </p>
                     <ul>
-<li>
+                        <li>
                             <p className="section-text-legals">
-                                [Listez les données collectées lors de l’utilisation du site]
+                                Nom, prénom, adresse, numéro de téléphone, adresse électronique.
                             </p>
                         </li>
                     </ul>
@@ -179,25 +176,20 @@ export const PoliticConfidentiality = () => {
                     </p>
                     <ul>
                         <li>
-                            <p className="section-text-legals">
-                                [Préciser la/les raison(s) pour laquelle/lesquelles la collecte
-                                de données personnelles est nécessaire dans le cadre de votre
-                                activité]
-                                exemple : gestion de contrat, gestion de l’espace client, suivi
-                                de la qualité des services, envoi de newsletter, etc.
+                            <p className="section-text-legals">Gestion de l’espace client, suivi
+                                de la qualité des services, envoi de newsletter, prospection, réservation.
                             </p>
                         </li>
                     </ul>
                     <p className="section-text-legals">
-                        Article 3.2 : Mode de collecte des données
+                        <b>Article 3.2 :</b> Mode de collecte des données
                         Lorsque vous utilisez notre site, sont automatiquement collectées
                         les données suivantes :
                     </p>
                     <ul>
                         <li>
                             <p className="section-text-legals">
-                                [Liste des données automatiquement collectées lors de la simple
-                                visite de l’utilisateur sur le site]
+                                Adresse IP, cookies, informations sur l’ordinateur ou le terminal, type de navigateur, type de système d’exploitation, et informations sur la navigation des utilisateurs sur le site.
                             </p>
                         </li>
                         <li>
@@ -208,51 +200,35 @@ export const PoliticConfidentiality = () => {
                         </li>
                         <li>
                             <p className="section-text-legals">
-                                [Lister les données personnelles collectées, et préciser la
-                                finalité de la collecte]
+                                Aucune
                             </p>
                         </li>
                     </ul>
                     <p className="section-text-legals">
                         Elles sont conservées par le responsable du traitement dans des
-                        conditions raisonnables de sécurité, pour une durée de : [Indiquer la
-                        durée de conservation prévue]
+                        conditions raisonnables de sécurité, pour une durée de : 3 ans.
                         <br/>
                         La société est susceptible de conserver certaines données à
                         caractère personnel au-delà des délais annoncés ci-dessus afin de
                         remplir ses obligations légales ou réglementaires.
                     </p>
                     <p className="section-text-legals">
-                        Article 3.3 : Hébergement des données
-                        Le site [nom du site web] est hébergé par :
+                        <b>Article 3.3 :</b> Hébergement des données
+                        Le site {legals.website_url} est hébergé par :
                     </p>
                     <ul>
                         <li>
                             <p className="section-text-legals">
-                                [Dénomination sociale de l’entreprise Adresse du siège social
-                                Contact (adresse email et/ou numéro de téléphone)]
-                            </p>
-                        </li>
-<li>
-                            <p className="section-text-legals">
-                                [Dans le cas ou les données personnelles collectées par
-                                l’entreprise seraient partagées avec des tiers, insérer une
-                                clause “Article 3.4 : Transmission des données à des tiers” :
-                                “Les données peuvent être transmises à nos partenaires, ci-après
-                                énumérés :”]
-                            </p>
-                        </li>
-                        <li>
-                            <p className="section-text-legals">
-                                [Si le site est concerné par l’utilisation de cookies, préciser
-                                leur utilisation dans un Article 3.5 : Politique en matière de
-                                “cookies”]
+                                {legals.hebergement_name} dont le siège est situé à {legals.hebergement_address}, {legals.hebergement_zip} {legals.hebergement_city}.
+                                <br/>
+                                website : {legals.hebergement_website}
                             </p>
                         </li>
                     </ul>
 
-                    <h2 className="section-title-legals">ARTICLE 4 : RESPONSABLE DU TRAITEMENT DES DONNÉES ET DÉLÉGUÉ À LA
-                        PROTECTION DES DONNÉES</h2>
+                    <h2 className="section-title-legals">Article 4 : Responsable du traitement des données et délégué à
+                        la
+                        protection des données</h2>
                     <p className="section-text-legals">
                         Article 4.1 : Le responsable du traitement des données
                         Les données à caractère personnelles sont collectées par [raison ou
@@ -299,8 +275,9 @@ export const PoliticConfidentiality = () => {
                         adresser une information à la CNIL.
                     </p>
 
-                    <h2 className="section-title-legals">ARTICLE 5 : LES DROITS DE L’UTILISATEUR EN MATIÈRE DE COLLECTE ET DE
-                        TRAITEMENT DES DONNÉES</h2>
+                    <h2 className="section-title-legals">Article 5 : Les droits de l’utilisateur en matière de collecte
+                        et de
+                        traitement des données</h2>
                     <p className="section-text-legals">
                         Tout utilisateur concerné par le traitement de ses données
                         personnelles peut se prévaloir des droits suivants, en application
@@ -360,15 +337,14 @@ export const PoliticConfidentiality = () => {
                         Consultez le site cnil.fr pour plus d’informations sur vos droits.
                     </p>
 
-                    <h2 className="section-title-legals">ARTICLE 6 : CONDITIONS DE MODIFICATION DE LA POLITIQUE DE
-                        CONFIDENTIALITÉ</h2>
+                    <h2 className="section-title-legals">Article 6 : Conditions de modification de la politique de
+                        confidentialité</h2>
                     <p className="section-text-legals">
-                        L’éditeur du site [Nom du site] se réserve le droit de pouvoir
+                        L’éditeur du site {legals.website_url} se réserve le droit de pouvoir
                         modifier la présente Politique à tout moment afin d’assurer aux
                         utilisateurs du site sa conformité avec le droit en vigueur.
                         <br/>
                         <br/>
-
                         Les éventuelles modifications ne sauraient avoir d’incidence sur les
                         achats antérieurement effectués sur le site, lesquels restent soumis
                         à la Politique en vigueur au moment de l’achat et telle qu’acceptée
@@ -381,10 +357,10 @@ export const PoliticConfidentiality = () => {
                         <br/>
                         <br/>
                         La présente politique, éditée le [date de mise en ligne], a été mise
-                        à jour le [date de modification de la politique].
+                        à jour le {legals.maj_date}.
                     </p>
+                </div>
             </div>
-        </div>
         </>
     );
 };

@@ -10,7 +10,6 @@ const Footer = () => {
             <div className="flex justify-center md:justify-end flex-wrap">
                 <a rel={"noreferrer"} target={"_blank"} href="/mentions-legales" className="mx-2 cursor-pointer ">Mentions
                     légales</a>
-                <a rel={"noreferrer"} target={"_blank"} href="/cgu" className="mx-2 cursor-pointer">CGU</a>
                 <a rel={"noreferrer"} target={"_blank"} href="/politique-confidentialite"
                    className="mx-2 cursor-pointer">Politique de confidentialité</a>
                 <a rel={"noreferrer"} target={"_blank"} href="/politique-cookie" className="mx-2 cursor-pointer">Politique

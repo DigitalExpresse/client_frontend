@@ -7,10 +7,9 @@ import CardMenuPage from "./pages/cardMenuPage/CardMenuPage";
 import {ReservationContext} from "./context/ReservationContext";
 import Reservation from "./components/reservation/Reservation";
 import ImageGalleryPage from "./pages/imageGalleryPage.tsx/ImageGalleryPage";
-import Cookie from "./pages/legalsPage/Cookie";
+import PoliticCookie from "./pages/legalsPage/PoliticCookie";
 import ScrollToTop from "./components/ScrollToTop";
 import PoliticConfidentiality from "./pages/legalsPage/PoliticConfidentiality";
-import Cgu from "./pages/legalsPage/Cgu";
 import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
 
 function App() {
@@ -37,9 +36,8 @@ function App() {
                     <Route path="/carte" element={<CardMenuPage/>}/>
                     <Route path={"/galerie"} element={<ImageGalleryPage/>}/>
 
-                    <Route path={"/politique-cookie"} element={<Cookie/>}/>
+                    <Route path={"/politique-cookie"} element={<PoliticCookie/>}/>
                     <Route path={"/politique-confidentialite"} element={<PoliticConfidentiality/>}/>
-                    <Route path={"/cgu"} element={<Cgu/>}/>
                     <Route path={"/mentions-legales"} element={<MentionLegalCgu/>}/>
                 </Routes>
             </BrowserRouter>
