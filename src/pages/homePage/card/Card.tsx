@@ -2,6 +2,7 @@ import React from 'react';
 import './card.css';
 import textSection from "../../../dataBrut/textSection.json";
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
+import {Link} from "react-router-dom";
 
 const Card = () => {
 
@@ -19,7 +20,7 @@ const Card = () => {
 
                 <article className="menu-img min-h-200px sm:min-h-300px !bg-cover object-cover flex justify-center">
 
-                    <a href={'/carte'} className="px-3 py-1 text-lg m-auto text-center w-60 text-md border border-white relative bg-grayLight text-white transition ease-in-out duration-200 hover:bg-primaire">Découvrir nos cartes</a>
+                    <Link to={'/carte'} className="px-3 py-1 text-lg m-auto text-center w-60 text-md border border-white relative bg-grayLight text-white transition ease-in-out duration-200 hover:bg-primaire">Découvrir nos cartes</Link>
 
                 </article>
 
