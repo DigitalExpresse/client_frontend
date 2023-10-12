@@ -1,0 +1,7 @@
+.card-description {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    color: var(--color-ligth);
+    font-weight: 600;
+    max-width: 90%;
+}

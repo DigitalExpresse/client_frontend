@@ -6,7 +6,7 @@ import './diapo.css';
 const Diapo = (images: any) => {
     return (
         <section className="m-3 mt-4 md:!mx-8">
-            <div className="sm:hidden">
+            <div className="carousel-react-section sm:hidden">
                 <Carousel interval={4000} autoPlay swipeable={true} dynamicHeight={true} infiniteLoop={true}
                           width={"100%"} ariaLabel="Diaporama de photo des produits et du restaurant">
                     {

@@ -109,7 +109,7 @@
   --color-black: #000000;
   --color-bgGray: rgba(241, 241, 241, 0.45);
   --color-grayLight: rgba(0, 0, 0, 0.5);
-  --color-ligth: rgba(73, 71, 71, 0.78);
+  --color-ligth: rgba(73,71,71,0.78);
   --color-dark: #0c1226;
   --color-grayLighter: #f1f1f1;
   --color-danger: #ff0000;
@@ -154,7 +154,7 @@ body {
   font-family: var(--font-family-body);
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 button {

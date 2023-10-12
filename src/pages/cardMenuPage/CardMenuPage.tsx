@@ -4,13 +4,14 @@ import CouvertureCard from "../homePage/couvertureCard/CouvertureCard";
 import NavigationCardsMenus from "./navigationCardMenu/NavigationCardsMenus";
 import Footer from "../../components/footer/Footer";
 import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
-import './cardMenuPage.css';
+import ScrollToTop from "../../components/ScrollToTop";
 import {fetchCards} from "./card/CardApi";
 import {renderCardsElements} from "./card/CardService";
-import api from "../../dataBrut/api.json";
 import {renderMenusElements} from "./menu/MenuService";
 import {fetchMenus} from "./menu/MenuApi";
-import ScrollToTop from "../../components/ScrollToTop";
+import api from "../../dataBrut/api.json";
+import './cardMenuPage.css';
+
 
 const CardMenuPage = () => {
 
@@ -34,6 +35,7 @@ const CardMenuPage = () => {
             <Navbar />
             <CouvertureCard />
             <NavigationCardsMenus />
+            <p className={"cardMenu-description"}>Notre cuisine est maison, élaborée à partir de produits de qualité.</p>
             {renderCardsElements(cards)}
             {renderMenusElements(menus)}
             <NewsletterReserve />

@@ -3,6 +3,7 @@ import {renderCardProductsWithCategory} from "./CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
 import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
 import api from "../../../dataBrut/api.json";
+import "./card.css";
 
 const Card = ({cardData}: any) => {
     const [cardProducts, setCardProducts] = useState<any>([]);
@@ -28,6 +29,7 @@ const Card = ({cardData}: any) => {
             <section
                 className="bg-bgGray rounded-md font-extrabold text-center flex flex-col justify-center pt-12 pb-8 px-4 md:!px-16 lg:!px-44 mx-3 my-4 md:!mx-8 !scroll-smooth">
                 <h2 className="text-xl md:text-2xl mb-4 md:!mb-10 uppercase self-center">{cardData.name}</h2>
+                <p className="card-description">{cardData.description}</p>
                 {!hasCategories && !isFirstCategoryNull ? (
                     <p className={"text-xl"}>A venir ..</p>
                 ) : (

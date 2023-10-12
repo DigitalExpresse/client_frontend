@@ -1,4 +1,10 @@
-
+.cardMenu-description {
+  margin: 2rem auto;
+  text-align: center;
+  color: var(--color-ligth);
+  font-weight: 600;
+  max-width: 80%;
+}
 
 
 

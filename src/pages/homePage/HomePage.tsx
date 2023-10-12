@@ -9,6 +9,7 @@ import NewsletterReserve from "./newsletterReserve/NewsletterReserve";
 import Footer from "../../components/footer/Footer";
 import './home.css';
 import {images} from "../../assets/images/Image";
+import InfoPractice from "./infoPractice/InfoPractice";
 const HomePage = () => {
 
 
@@ -34,6 +35,7 @@ const HomePage = () => {
         <Card />
         <Diapo images={imagesFirstDiapo}/>
         <HoraireContact/>
+        <InfoPractice />
         <Diapo images={imagesSecondDiapo} />
         <NewsletterReserve />
         <Footer />

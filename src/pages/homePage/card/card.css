@@ -2,3 +2,13 @@
     background: url("card.webp") no-repeat center;
     width: 100%;
 }
+
+.section-card-text {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
