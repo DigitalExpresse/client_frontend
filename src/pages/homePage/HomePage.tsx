@@ -10,17 +10,11 @@ import Footer from "../../components/footer/Footer";
 import './home.css';
 import {images} from "../../assets/images/Image";
 import InfoPractice from "./infoPractice/InfoPractice";
+import RestaurantBar from "./restaurantBar/RestaurantBar";
 const HomePage = () => {
 
 
     const imagesFirstDiapo = [
-        images.find((image: any) => image.includes('_X5A3419')),
-        images.find((image: any) => image.includes('_X5A3444')),
-        images.find((image: any) => image.includes('_X5A3395')),
-        images.find((image: any) => image.includes('_X5A3373')),
-    ]
-
-    const imagesSecondDiapo = [
         images.find((image: any) => image.includes('_X5A3419')),
         images.find((image: any) => image.includes('_X5A3444')),
         images.find((image: any) => image.includes('_X5A3395')),
@@ -32,11 +26,11 @@ const HomePage = () => {
         <Navbar />
         <Couverture />
         <AboutUs />
-        <Card />
+        <RestaurantBar />
         <Diapo images={imagesFirstDiapo}/>
+        <Card />
         <HoraireContact/>
         <InfoPractice />
-        <Diapo images={imagesSecondDiapo} />
         <NewsletterReserve />
         <Footer />
     </div>

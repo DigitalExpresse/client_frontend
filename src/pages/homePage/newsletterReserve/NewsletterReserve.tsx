@@ -31,7 +31,7 @@ const NewsletterReserve = () => {
     return (
         <section className="flex flex-col mx-3 md:!mx-8 text-white sm:flex-row">
 
-            <article className="min-h-250px md:w-1/2 bg-primaire p-6 md:px-16 xl:px-36">
+            <article className="min-h-250px md:w-1/2 bg-secondaire p-6 md:px-16 xl:px-36">
                 <h3 className="text-xl text-center pb-2 2xl:pb-6 md:text-3xl">{textSection.newsletterReserveTitle}</h3>
                 <hr className="w-40 m-auto"/>
                 <div className="flex flex-col mt-4">
@@ -44,7 +44,7 @@ const NewsletterReserve = () => {
                 </div>
             </article>
 
-            <article className="min-h-250px md:w-1/2 bg-secondaire p-6 md:px-16 xl:px-36">
+            <article className="min-h-250px md:w-1/2 bg-primaire p-6 md:px-16 xl:px-36">
                 <h3 className="text-xl text-center mb-3 2xl:pb-6 md:text-3xl">Newsletter</h3>
                 <hr className="w-40 m-auto"/>
 

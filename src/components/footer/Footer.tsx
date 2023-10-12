@@ -8,11 +8,11 @@ const Footer = () => {
             <p className="text-center md:text-left mb-2 md:!mb-0">© 2021 - Tous droits réservés</p>
 
             <div className="flex justify-center md:justify-end flex-wrap">
-                <a rel={"noreferrer"} target={"_blank"} href="/mentions-legales" className="mx-2 cursor-pointer ">Mentions
+                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/mentions-legales"} className="mx-2 cursor-pointer ">Mentions
                     légales</a>
-                <a rel={"noreferrer"} target={"_blank"} href="/politique-confidentialite"
+                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/politique-confidentialite"}
                    className="mx-2 cursor-pointer">Politique de confidentialité</a>
-                <a rel={"noreferrer"} target={"_blank"} href="/politique-cookie" className="mx-2 cursor-pointer">Politique
+                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/politique-cookie"} className="mx-2 cursor-pointer">Politique
                     de cookies</a>
             </div>
 

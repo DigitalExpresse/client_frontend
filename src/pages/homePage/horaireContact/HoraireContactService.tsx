@@ -11,7 +11,6 @@ export const renderHoraires = (openingHours: any) => {
                         <p key={index} className="text-white opacity-70 text-center md:mr-5">{jour.horaires[0] + " - " + jour.horaires[1]}</p>
                 </div>
             </div>
-            <hr className="w-100 text-white"/>
         </div>
     ));
 };

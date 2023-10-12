@@ -46,21 +46,21 @@
     {
       "id": 3,
       "name": "Côté mer",
-      "description": "Côté mer",
+      "description": null,
       "categories": [{"category": null}]
     },
 
     {
       "id": 5,
       "name": "Pâtes & Risottos",
-      "description": "Pâtes & Risottos / Pasta & Risotto",
+      "description": null,
       "categories": [{"category": null}]
     },
 
     {
       "id": 4,
       "name": "Desserts",
-      "description": "Desserts",
+      "description": null,
       "categories": [{"category": null}]
     }
   ],
@@ -113,19 +113,19 @@
     {
       "id": 1,
       "name": "Planche à partager",
-      "description": "guacamole, nachos, tacos avec du bœuf et hogao (sauce à l'ail et tomate)",
+      "description": "Guacamole, nachos, tacos avec du bœuf et hogao (sauce à l'ail et tomate)",
       "price": 16
     },
     {
       "id": 2,
       "name": "La César",
-      "description": "lanières de poulet, copeaux de parmesan, œuf dur, croûtons, laitue romaine et sauce César",
+      "description": "Lanières de poulet, copeaux de parmesan, œuf dur, croûtons, laitue romaine et sauce César",
       "price": 17
     },
     {
       "id": 3,
       "name": "Ceviche de thon",
-      "description": "thon, oignon rouge, poivron rouge, coriandre, graines de sésame, mangue, jus de citron vert, lait de tigre (gingembre, ail, sauce soja, vinaigre de riz)",
+      "description": "Thon, oignon rouge, poivron rouge, coriandre, graines de sésame, mangue, jus de citron vert, lait de tigre (gingembre, ail, sauce soja, vinaigre de riz)",
       "price": 19
     },
     {
@@ -137,43 +137,43 @@
     {
       "id": 5,
       "name": "Salade Bouddoir",
-      "description": "crevettes sautées, ceviche de thon, saumon à la scandinave, lanières d'avocat, tomate, graines de sésame, mélange de laitues et pain grillé",
+      "description": "Crevettes sautées, ceviche de thon, saumon à la scandinave, lanières d'avocat, tomate, graines de sésame, mélange de laitues et pain grillé",
       "price": 22
     },
     {
       "id": 6,
       "name": "Salade thaï",
-      "description": "avec du bœuf mariné, des nouilles de blé, des pousses de soja, des crudités et une sauce soja sucrée",
+      "description": "Avec du bœuf mariné, des nouilles de blé, des pousses de soja, des crudités et une sauce soja sucrée",
       "price": 18
     },
     {
       "id": 7,
       "name": "Le tartare de saumon Label Rouge",
-      "description": "sur un lit d'avocat, zeste de citron vert, coriandre, échalotes et pain grillé",
+      "description": "Sur un lit d'avocat, zeste de citron vert, coriandre, échalotes et pain grillé",
       "price": 19
     },
     {
       "id": 8,
       "name": "La burrata",
-      "description": "tomate ancienne, olives italiennes et pesto",
+      "description": "Tomate ancienne, olives italiennes et pesto",
       "price": 17
     },
     {
       "id": 9,
       "name": "La quinoa verte",
-      "description": "quinoa, fromage feta, melon, concombre, tomate, olives, vinaigrette à la menthe et coriandre",
+      "description": "Quinoa, fromage feta, melon, concombre, tomate, olives, vinaigrette à la menthe et coriandre",
       "price": 16
     },
     {
       "id": 10,
       "name": "Bol de poke au saumon",
-      "description": "riz, tartare de saumon Label Rouge, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
+      "description": "Riz, tartare de saumon Label Rouge, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
       "price": 18
     },
     {
       "id": 11,
       "name": "Bol de poke végétalien",
-      "description": "riz, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
+      "description": "Riz, lanières d'avocat, fruits frais, chou rouge, edamame, concombre et sauce soja aux agrumes",
       "price": 15
     },
     {
@@ -234,7 +234,7 @@
     {
       "id": 21,
       "name": "Tiramisu traditionnel",
-      "description": "copeaux de chocolat.",
+      "description": "Copeaux de chocolat.",
       "price": 8
     },
     {
@@ -246,7 +246,7 @@
     {
       "id": 23,
       "name": "Mousse au chocolat",
-      "description": "et son quatuor de gourmandises",
+      "description": "Avec son quatuor de gourmandises",
       "price": 8
     },
     {
@@ -270,7 +270,7 @@
     {
       "id": 27,
       "name": "Café ou thé gourmand",
-      "description": "et son quatuor de gourmandises",
+      "description": "Avec son quatuor de gourmandises",
       "price": 9.5
     },
 
@@ -301,14 +301,14 @@
     {
       "id": 32,
         "name": "Nuggets de poulet",
-        "description": "frites fraîches",
+        "description": "Frites fraîches",
         "price": 19
     },
 
     {
       "id": 33,
         "name": "Steak haché frais",
-        "description": "frites fraîches",
+        "description": "Frites fraîches",
         "price": 19
     },
 

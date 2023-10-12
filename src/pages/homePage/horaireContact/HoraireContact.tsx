@@ -16,30 +16,34 @@ const HoraireContact = () => {
     }, []);
 
     return (
-        <section id="horaires" className="flex flex-col md:flex-row my-3">
-            <div className="bg-primaire mx-3 md:!mx-8 min-h-150px flex flex-col items-center p-3 md:w-full md:!mr-0">
-                <h2 className="text-white text-xl md:text-3xl text-center">Horaires</h2>
-                <hr className="w-40 text-white"/>
-                {renderHoraires(horaires)}
+        <section id="horaires" className="flex flex-col md:flex-row">
+            <div className="bg-secondaire mx-3 md:!mx-8 min-h-150px items-center p-6 md:w-full md:!mr-0">
+                <h2 className="text-white text-xl md:text-3xl mb-3 text-center">Horaires</h2>
+                <div className="h-4/6 items-center flex flex-col justify-center gap-4">
+                    {renderHoraires(horaires)}
+                </div>
+
             </div>
 
-            <article className="bg-secondaire text-white mx-3 md:!mx-8 p-6 text-center md:w-full md:!ml-0">
+            <article className="bg-primaire text-white mx-3 md:!mx-8 p-6 text-center md:w-full md:!ml-0">
                 <h2 className="text-xl md:text-3xl text-center">Accès / Contact</h2>
-                <hr className="w-40 text-white"/>
 
-                <div className="md:mt-6">
+                <div className="mt-4 flex flex-col justify-center items-center">
                     <a href={restaurantInfo.googleMapsUrl}
                        rel={"noreferrer"} target={"_blank"}
                        className="block opacity-80 mb-2 underline">{restaurantInfo.adresse}
                     </a>
-                    <a rel={"noreferrer"} target={"_blank"} href={restaurantInfo.googleMapsUrl}
-                       className={"block border max-w-xxs p-2 mx-auto mt-4 mb-4"}>Google Maps</a>
+                    <div className="my-3 hover:underline">
+                        <i className="bi bi-geo-alt text-md mx-2"></i>
+                        <a rel={"noreferrer"} target={"_blank"} href={restaurantInfo.googleMapsUrl}
+                           className={"mx-auto opacity-80"}>Google Maps</a>
+                    </div>
                     <div>
                         <i className="bi bi-telephone-fill opacity-80 text-md mx-2"></i>
                         <a href={"tel:" + restaurantInfo.telNumber}
                            className="opacity-80">{restaurantInfo.telNumber}</a>
                     </div>
-                    <div className="flex justify-center mt-3">
+                    <div className="flex justify-center ml-3 mt-3">
                         <a className={"instagram-logo"} href={String(restaurantInfo.socialNetworks[0].url)}>
                             <i className="bi bi-instagram text-2xl mx-2"></i>
                         </a>
