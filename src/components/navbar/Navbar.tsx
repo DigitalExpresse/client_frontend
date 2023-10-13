@@ -25,7 +25,7 @@ const Navbar = () => {
                 <div className="flex items-center">
 
                     <div className="hidden sm:block">
-                        <Link to={'/carte'} className="m-2 font-bold hover:text-tertiary">Carte & menus</Link>
+                        <Link to={'/carte'} className="m-2 font-bold hover:text-tertiary">Cartes & Menus</Link>
                         <Link className="m-2 font-bold hover:text-tertiary" to="/galerie">Photos</Link>
                         <a className="m-2 font-bold hover:text-tertiary" href="/#horaires">Accès / Contact</a>
                     </div>
@@ -42,10 +42,10 @@ const Navbar = () => {
 
                 {/*  Au clic du de l'icone menu, on affiche le menu burger  */}
 
-                <div className={ navbarOpen ? "fadeIn bg-dark text-white absolute pt-14 top-14 left-0 w-full text-center sm:hidden h-screen" : "hidden" }>
+                <div className={ navbarOpen ? "fadeIn bg-dark text-white absolute pt-14 top-12 left-0 w-full text-center sm:hidden h-screen" : "hidden" }>
 
                     <div className="text-md w-1/2 m-auto">
-                        <Link to={'/carte'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Cartes & menus</Link>
+                        <Link to={'/carte'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Cartes & Menus</Link>
                         <a className="block py-2 font-bold md:hover:text-tertiary" href="/#horaires" onClick={() => setNavbarOpen(false)}>Accès / Contact</a>
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 

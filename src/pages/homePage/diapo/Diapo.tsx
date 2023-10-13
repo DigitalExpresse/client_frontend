@@ -25,7 +25,7 @@ const Diapo = (images: any) => {
                 {
                     images.images.map((image: any, index: number) => {
                         return (
-                                <img key={index} className="hover:scale-105 ease-in-out w-96 transition h-60 xl:h-96 object-cover" alt="Un plat : saumon d'alaska" src={image}/>
+                            <img key={index} className="hover:scale-105 ease-in-out !w-full transition h-60 xl:h-96 object-cover" alt="Un plat : saumon d'alaska" src={image}/>
                         )
                     })
                 }

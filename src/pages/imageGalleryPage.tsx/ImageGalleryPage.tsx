@@ -6,6 +6,7 @@ import Footer from "../../components/footer/Footer";
 import { images } from "../../assets/images/Image";
 import './imageGallery.css';
 import ScrollToTop from "../../components/ScrollToTop";
+import img from "../../assets/images/_X5A3430.webp";
 
 const ImageGalleryPage = () => {
 
@@ -32,7 +33,7 @@ const ImageGalleryPage = () => {
 
             <div className="couverture">
                 <img className={"couverture-img"}
-                     src={images.find(image => image.includes("_X5A3430")) || ''} alt={"Couverture qui illustre une de nos salade"}/>
+                     loading="eager"  src={img} alt={"Couverture qui illustre une de nos salade"}/>
                 <h2 className={"couverture-title"}>Nos photos</h2>
             </div>
 
