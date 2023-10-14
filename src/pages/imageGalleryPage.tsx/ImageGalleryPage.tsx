@@ -6,7 +6,7 @@ import Footer from "../../components/footer/Footer";
 import { images } from "../../assets/images/Image";
 import './imageGallery.css';
 import ScrollToTop from "../../components/ScrollToTop";
-import img from "../../assets/images/_X5A3430.webp";
+import img from "../../assets/images/_X5A3335.webp";
 
 const ImageGalleryPage = () => {
 
@@ -38,14 +38,19 @@ const ImageGalleryPage = () => {
             </div>
 
             <div className="imageGallery">
-                {images.map((image, index) => (
-                    <img
-                        className={"rounded img"}
-                        key={index}
-                        src={image}
-                        alt={`Quelque représentation de notre restaurant ${index}`}
-                        onClick={() => handleClick(image, setSelectedImage)}
-                    />))}
+                {images.map((image, index) => {
+                        return (
+                            <img
+                                className={"rounded img"}
+                                key={index}
+                                src={image}
+                                alt={`Quelque représentation de notre restaurant ${index}`}
+                                onClick={() => handleClick(image, setSelectedImage)}
+                            />
+                        )
+                    }
+                    )
+                }
                 {selectedImage && (
                     <div className={"modal"}>
                         <span className={"close"} onClick={() => handleCloseModal(setSelectedImage, setSelectedImageClass)}>&times;</span>

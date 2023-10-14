@@ -8,9 +8,9 @@ import {ReservationContext} from "./context/ReservationContext";
 import Reservation from "./components/reservation/Reservation";
 import ImageGalleryPage from "./pages/imageGalleryPage.tsx/ImageGalleryPage";
 import PoliticCookie from "./pages/legalsPage/PoliticCookie";
-import ScrollToTop from "./components/ScrollToTop";
 import PoliticConfidentiality from "./pages/legalsPage/PoliticConfidentiality";
 import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
+import ScrollToTopAuto from "./utils/ScrollToTopAuto";
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
         <div>
             {process.env.REACT_APP_DATA_MODE !== "static" && <Reservation/>}
             <BrowserRouter>
+                <ScrollToTopAuto/>
                 <Routes>
                     <Route path="*" element={<HomePage/>}/>
                     <Route path="/" element={<HomePage/>}/>
@@ -41,7 +42,6 @@ function App() {
                     <Route path={"/mentions-legales"} element={<MentionLegalCgu/>}/>
                 </Routes>
             </BrowserRouter>
-            <ScrollToTop/>
         </div>
     );
 }

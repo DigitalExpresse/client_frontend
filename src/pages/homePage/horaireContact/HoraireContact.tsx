@@ -44,10 +44,10 @@ const HoraireContact = () => {
                            className="opacity-80">{restaurantInfo.telNumber}</a>
                     </div>
                     <div className="flex justify-center ml-3 mt-3">
-                        <a className={"instagram-logo"} href={String(restaurantInfo.socialNetworks[0].url)}>
+                        <a rel={"noreferrer"} target={"_blank"} className={"instagram-logo"} href={String(restaurantInfo.socialNetworks[0].url)}>
                             <i className="bi bi-instagram text-2xl mx-2"></i>
                         </a>
-                        <a className={"'facebook-logo"} href={String(restaurantInfo.socialNetworks[1].url)}>
+                        <a rel={"noreferrer"} target={"_blank"} className={"'facebook-logo"} href={String(restaurantInfo.socialNetworks[1].url)}>
                             <i className="bi bi-facebook text-2xl mx-2"></i>
                         </a>
                     </div>

@@ -1,20 +1,25 @@
 {
 
   "aboutUsEtablishmentTitle": "Le Bouddoir",
-  "aboutUsEtablishmentTextFirstParagraph": "Découvrez l'enchantement sud-américain au Bouddoir, notre restaurant au cœur d'Aix-en-Provence lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.\n",
-  "aboutUsEtablishmentTextSecondParagraph": "Fusionnant les saveurs d'Amérique du Sud avec l'élégance provençale, notre restaurant original et authentique vous transporte dans un voyage gustatif unique.\n",
+  "aboutUsEtablishmentTextFirstParagraph": "Découvrez l'enchantement sud-américain au Bouddoir, notre restaurant au cœur d'Aix-en-Provence, situé en face de l'emblématique fontaine d'Altius.",
+  "aboutUsEtablishmentTextSecondParagraph": "Fusionnant les saveurs d'Amérique du Sud avec l'élégance provençale, notre restaurant original et authentique vous transporte dans un voyage gustatif unique.",
   "aboutUsEtablishmentTextThirdParagraph": "Un joyau culinaire où l'Amérique du Sud rencontre la charmante Aix-en-Provence.",
+
+  "tapasTitle": "Le coin Tapas",
+  "tapasTextFirstPar": "Découvrez un voyage sensoriel en Amérique du Sud avec notre coin tapas. Des saveurs exotiques, des épices enivrantes, et une ambiance chaleureuse.",
+  "tapasSecondPar": "Plus qu'un restaurant, Le Bouddoir est une expérience culinaire unique à Aix-en-Provence. Notre chef talentueux vous propose des tapas raffinés mettant en valeur les produits locaux de la Provence.",
 
   "comingSoonTitle": "Notre coin tapas arrive bientôt !",
   "comingSoonText": "Bientôt, savourez l'essence colombienne dans notre coin tapas. Des saveurs uniques et une ambiance chaleureuse pour une expérience culinaire colombienne inoubliable au Bouddoir.",
 
-  "descriptionCouverture": "Restaurant / Brasserie / Tapas",
+  "descriptionCouverture": " Brunch / Tapas / Restaurant",
 
   "newsletterReserveTitle": "On vous attend ...",
   "newsletterReserveText": "Nous serons ravis de vous accueillir dans notre restaurant pour vous faire découvrir nos spécialités.",
   "newsletterText": "Restez informé avec notre newsletter et ne manquez aucune offre spéciale ni événement.",
 
-  "cardText": "Découvrez nos délices culinaires, des cartes authentiques aux saveurs sud-américaines, conçues avec passion pour ravir vos papilles au Bouddoir d\"Aix-en-Provence.\n",
+  "cardTextFirst": "Explorez notre éventail gastronomique, alliant authenticité sud-américaine et provençale.",
+  "cardTextSecond": "Au Bouddoir d'Aix-en-Provence, nous créons avec passion des expériences culinaires qui émerveillent vos sens.",
 
   "baliseTitle": "Restaurant Le Bouddoir - Aix en Provence",
   "baliseDescription": "Découvrez les saveurs exquises du Restaurant Le Bouddoir à Aix-en-Provence. Notre chef talentueux concocte des plats raffinés mettant en valeur les produits locaux de la Provence. Profitez d'une expérience culinaire inoubliable dans une ambiance chaleureuse et élégante. Réservez dès maintenant pour une soirée gastronomique inédite."

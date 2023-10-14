@@ -60,11 +60,11 @@ img {
 }
 
 .modal-content img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .imageGallery .img {
-    height: 300px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
     border-radius: 0.25rem;
@@ -111,6 +111,12 @@ img {
     right: 7%;
 }
 
+@media screen and (min-width: 600px) {
+    .imageGallery .img {
+        width: 47%;
+    }
+}
+
 @media (min-width: 767px) {
     .couverture {
         padding-left: 2rem!important;
@@ -118,7 +124,7 @@ img {
     }
 
     .couverture-img {
-        max-height: 300px;
+        max-height: 250px;
     }
 
     .imageGallery {
@@ -156,7 +162,7 @@ img {
     }
 
     .imageGallery .img {
-        width: 31%;
+        width: 32%;
     }
 
     .modal-content {

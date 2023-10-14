@@ -1,4 +1,5 @@
 import React from 'react';
+import './infoPractice.css';
 
 const InfoPractice = () => {
     return (
@@ -27,7 +28,7 @@ const InfoPractice = () => {
                 </div>
             </article>
 
-            <article className="menu-img min-h-200px !bg-cover object-cover flex justify-center w-full md:w-1/2"></article>
+            <article className="infoPractice-img min-h-200px !bg-cover object-cover flex justify-center w-full md:w-1/2"></article>
 
         </section>
     );
