@@ -60,10 +60,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex justify-center mt-2">
-                        <a rel={"noreferrer"} target={"_blank"} className='hover:!text-tertiary instagram-logo' href={String(restaurantInfo.socialNetworks[0])}>
+                        <a rel={"noreferrer"} target={"_blank"} className='hover:!text-tertiary instagram-logo' href={String(restaurantInfo.socialNetworks[0].url)}>
                             <i className="bi bi-instagram text-2xl mx-2"></i>
                         </a>
-                        <a rel={"noreferrer"} target={"_blank"} className={"'facebook-logo"} href={String(restaurantInfo.socialNetworks[1])}>
+                        <a rel={"noreferrer"} target={"_blank"} className={"'facebook-logo"} href={String(restaurantInfo.socialNetworks[1].url)}>
                             <i className="bi bi-facebook text-2xl mx-2"></i>
                         </a>
                     </div>

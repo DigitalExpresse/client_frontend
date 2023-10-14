@@ -1,5 +1,6 @@
 import React from 'react';
 import restaurantInfo from "../../dataBrut/restaurantInfo.json";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -9,12 +10,12 @@ const Footer = () => {
             <p className="text-center md:text-left mb-2 md:!mb-0">© 2023 {restaurantInfo.name} - DigitalExpress</p>
 
             <div className="flex justify-center md:justify-end flex-wrap">
-                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/mentions-legales"} className="mx-2 cursor-pointer ">Mentions
-                    légales</a>
-                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/politique-confidentialite"}
-                   className="mx-2 cursor-pointer">Politique de confidentialité</a>
-                <a rel={"noreferrer"} target={"_blank"} href={process.env.REACT_APP_DOMAIN + "/politique-cookie"} className="mx-2 cursor-pointer">Politique
-                    de cookies</a>
+                <Link rel={"noreferrer"} target={"_blank"} to={process.env.REACT_APP_DOMAIN + "/mentions-legales"} className="mx-2 cursor-pointer ">Mentions
+                    légales</Link>
+                <Link rel={"noreferrer"} target={"_blank"} to={process.env.REACT_APP_DOMAIN + "/politique-confidentialite"}
+                   className="mx-2 cursor-pointer">Politique de confidentialité</Link>
+                <Link rel={"noreferrer"} target={"_blank"} to={process.env.REACT_APP_DOMAIN + "/politique-cookie"} className="mx-2 cursor-pointer">Politique
+                    de cookies</Link>
             </div>
 
         </footer>

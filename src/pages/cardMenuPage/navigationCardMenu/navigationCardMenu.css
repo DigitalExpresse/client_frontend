@@ -43,3 +43,8 @@
     text-decoration: none;
     color: var(--primary-color);
 }
+
+.menu-name-nav-div {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

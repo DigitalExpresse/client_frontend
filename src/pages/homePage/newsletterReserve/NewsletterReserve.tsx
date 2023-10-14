@@ -1,8 +1,6 @@
 import React, {useContext} from 'react';
 import {ReservationContext} from "../../../context/ReservationContext";
 import LoaderBasic from "../../../components/loader/LoaderBasic";
-import {fetchCards} from "../../cardMenuPage/card/CardApi";
-import {text} from "node:stream/consumers";
 import textSection from "../../../dataBrut/textSection.json";
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 

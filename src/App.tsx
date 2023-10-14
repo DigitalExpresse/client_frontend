@@ -1,7 +1,5 @@
 import React, {useContext, useEffect} from 'react';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
-import './styles/index.css';
-import './styles/animations.css';
 import HomePage from "./pages/homePage/HomePage";
 import CardMenuPage from "./pages/cardMenuPage/CardMenuPage";
 import {ReservationContext} from "./context/ReservationContext";
@@ -10,7 +8,9 @@ import ImageGalleryPage from "./pages/imageGalleryPage.tsx/ImageGalleryPage";
 import PoliticCookie from "./pages/legalsPage/PoliticCookie";
 import PoliticConfidentiality from "./pages/legalsPage/PoliticConfidentiality";
 import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
-import ScrollToTopAuto from "./utils/ScrollToTopAuto";
+import ScrollToTopAuto from "./components/ScrollToTopAuto";
+import './styles/index.css';
+import './styles/animations.css';
 
 function App() {
 

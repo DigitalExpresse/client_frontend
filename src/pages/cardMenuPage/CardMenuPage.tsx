@@ -4,7 +4,7 @@ import CouvertureCard from "../homePage/couvertureCard/CouvertureCard";
 import NavigationCardsMenus from "./navigationCardMenu/NavigationCardsMenus";
 import Footer from "../../components/footer/Footer";
 import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
-import ScrollToTop from "../../components/ScrollToTop";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 import {fetchCards} from "./card/CardApi";
 import {renderCardsElements} from "./card/CardService";
 import {renderMenusElements} from "./menu/MenuService";
@@ -40,7 +40,7 @@ const CardMenuPage = () => {
             {renderMenusElements(menus)}
             <NewsletterReserve />
             <Footer />
-            <ScrollToTop />
+            <ScrollToTopButton />
         </>
     );
 };

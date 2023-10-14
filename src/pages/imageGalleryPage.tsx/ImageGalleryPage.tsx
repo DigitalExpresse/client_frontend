@@ -5,7 +5,7 @@ import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
 import Footer from "../../components/footer/Footer";
 import { images } from "../../assets/images/Image";
 import './imageGallery.css';
-import ScrollToTop from "../../components/ScrollToTop";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 import img from "../../assets/images/_X5A3335.webp";
 
 const ImageGalleryPage = () => {
@@ -67,7 +67,7 @@ const ImageGalleryPage = () => {
 
             <NewsletterReserve />
             <Footer />
-            <ScrollToTop />
+            <ScrollToTopButton />
         </>
     );
 }

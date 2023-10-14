@@ -25,7 +25,7 @@ const NavigationCardsMenus = () => {
     return (
 
         <div className="menu-nav">
-            <div className={'flex xl:justify-center bg-white whitespace-nowrap w-11/12 mx-auto overflow-x-auto uppercase text-md pt-4 pb-3 hover:overflow-x-auto'}>
+            <div className={'menu-name-nav-div flex xl:justify-center bg-white whitespace-nowrap w-11/12 mx-auto overflow-x-auto uppercase text-md pt-4 pb-3 hover:overflow-x-auto'}>
                 {renderCardsAndMenuTitleForNavigation(cardsAndMenus, active, setActive)}
                 {process.env.REACT_APP_DATA_MODE === "static" && <a href={process.env.REACT_APP_DOMAIN + "/la_carte_boisson.pdf"} target="_blank" rel="noreferrer" className="font-bold mx-2">Boissons / Alcools</a>}
             </div>
