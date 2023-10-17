@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import { ReservationContext } from "../../../context/ReservationContext";
 import {NavbarContext} from "../../../context/NavbarContext";
 import './navbar.css'
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import {linkScrollToElementOnOtherPage} from "../../../utils/linkScrollToElementOnOtherPage";
+import {Link} from "react-router-dom";
 
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
 
                     <div className="text-md w-1/2 m-auto">
                         <Link to={'/carte'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Cartes & Menus</Link>
-                        <Link smooth={true} className="block py-2 font-bold md:hover:text-tertiary" to="/#horaires" onClick={() => {
+                        <Link  className="block py-2 font-bold md:hover:text-tertiary" to="/#horaires" onClick={() => {
                             linkScrollToElementOnOtherPage('horaires')
                             setNavbarOpen(false)
                         }}>
