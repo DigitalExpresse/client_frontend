@@ -29,7 +29,9 @@ const HomePage = () => {
         <AboutUs />
         <Tapas />
         <Diapo images={imagesFirstDiapo}/>
-        <div id={"link-to-anchor-link"}></div>
+        {/*On place l'id horaires pour qu'au clic sur le bouton de la navbar, on puisse scroller jusqu'à cette div
+        car sinon ca n'atterit pas au bon endroit ( a cause de la couverture qui est en position absolute)*/}
+        <div id={"horaires"}></div>
         <Card />
         <HoraireContact/>
         <InfoPractice />
