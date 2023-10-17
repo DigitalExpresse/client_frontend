@@ -29,7 +29,7 @@ const Navbar = () => {
                     <div className="hidden sm:block">
                         <Link to={'/carte'} className="m-2 font-bold hover:text-tertiary">Cartes & Menus</Link>
                         <Link className="m-2 font-bold hover:text-tertiary" to="/galerie">Photos</Link>
-                        <Link className="m-2 font-bold hover:text-tertiary" to="/" onClick={(e) => {linkScrollToElementOnOtherPage('horaires')}}>Accès / Contact</Link>
+                        <Link className="m-2 font-bold hover:text-tertiary" to="/" onClick={() => linkScrollToElementOnOtherPage('horaires')}>Accès / Contact</Link>
                     </div>
 
                     { process.env.REACT_APP_DATA_MODE === 'static' ?
@@ -48,7 +48,12 @@ const Navbar = () => {
 
                     <div className="text-md w-1/2 m-auto">
                         <Link to={'/carte'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Cartes & Menus</Link>
-                        <Link smooth={true} className="block py-2 font-bold md:hover:text-tertiary" to="/#horaires" onClick={() => setNavbarOpen(false)}>Accès / Contact</Link>
+                        <Link smooth={true} className="block py-2 font-bold md:hover:text-tertiary" to="/#horaires" onClick={() => {
+                            linkScrollToElementOnOtherPage('horaires')
+                            setNavbarOpen(false)
+                        }}>
+                            Accès / Contact
+                        </Link>
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
                         { process.env.REACT_APP_DATA_MODE === 'static' ?
