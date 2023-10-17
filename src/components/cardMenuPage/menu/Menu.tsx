@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {renderCardProductsWithCategory} from "../card/CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
 import api from "../../../dataBrut/api.json";
 import {fetchCategoryByMenuId, fetchMenuProduct} from "./MenuApi";

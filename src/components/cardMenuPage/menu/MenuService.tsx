@@ -1,5 +1,4 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Product from "../product/Product";
 import Menu from "./Menu";
 
