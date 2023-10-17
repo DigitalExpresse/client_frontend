@@ -10,11 +10,11 @@ const Footer = () => {
             <p className="text-center md:text-left mb-2 md:!mb-0">© 2023 {restaurantInfo.name} - DigitalExpress</p>
 
             <div className="flex justify-center md:justify-end flex-wrap">
-                <Link to={"/mentions-legales"} className="mx-2 cursor-pointer ">Mentions
+                <Link target="_blank" rel="noopener noreferrer" to={"/mentions-legales"} className="mx-2 cursor-pointer ">Mentions
                     légales</Link>
-                <Link to={"/politique-confidentialite"}
+                <Link target="_blank" rel="noopener noreferrer" to={"/politique-confidentialite"}
                    className="mx-2 cursor-pointer">Politique de confidentialité</Link>
-                <Link to={"/politique-cookie"} className="mx-2 cursor-pointer">Politique
+                <Link target="_blank" rel="noopener noreferrer" to={"/politique-cookie"} className="mx-2 cursor-pointer">Politique
                     de cookies</Link>
             </div>
 

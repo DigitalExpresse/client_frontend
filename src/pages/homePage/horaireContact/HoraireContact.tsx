@@ -16,16 +16,16 @@ const HoraireContact = () => {
     }, []);
 
     return (
-        <section id="horaires" className="flex flex-col md:flex-row">
-            <div className="bg-secondaire mx-3 md:!mx-8 min-h-150px items-center p-6 md:w-full md:!mr-0">
+        <section className="flex flex-col sm:flex-row px-3 md:!px-8">
+            <article className="bg-secondaire min-h-150px items-center p-6 w-full sm:!mx-0 sm:w-1/2 md:!mr-0">
                 <h2 className="text-white text-xl md:text-3xl mb-3 text-center">Horaires</h2>
                 <div className="h-4/6 items-center flex flex-col justify-center gap-4">
                     {renderHoraires(horaires)}
                 </div>
 
-            </div>
+            </article>
 
-            <article className="bg-primaire text-white mx-3 md:!mx-8 p-6 text-center md:w-full md:!ml-0">
+            <article className="bg-primaire text-white p-6 text-center w-full sm:!mx-0 sm:w-1/2 md:!ml-0">
                 <h2 className="text-xl md:text-3xl text-center">Accès / Contact</h2>
 
                 <div className="mt-4 flex flex-col justify-center items-center">

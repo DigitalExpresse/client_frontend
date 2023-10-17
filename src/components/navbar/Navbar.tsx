@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className="hidden sm:block">
                         <Link to={'/carte'} className="m-2 font-bold hover:text-tertiary">Cartes & Menus</Link>
                         <Link className="m-2 font-bold hover:text-tertiary" to="/galerie">Photos</Link>
-                        <a className="m-2 font-bold hover:text-tertiary" href="/#horaires">Accès / Contact</a>
+                        <a className="m-2 font-bold hover:text-tertiary" href="/#link-to-anchor-link">Accès / Contact</a>
                     </div>
 
                     { process.env.REACT_APP_DATA_MODE === 'static' ?
@@ -46,7 +46,7 @@ const Navbar = () => {
 
                     <div className="text-md w-1/2 m-auto">
                         <Link to={'/carte'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Cartes & Menus</Link>
-                        <a className="block py-2 font-bold md:hover:text-tertiary" href="/#horaires" onClick={() => setNavbarOpen(false)}>Accès / Contact</a>
+                        <a className="block py-2 font-bold md:hover:text-tertiary" href="/#link-to-anchor-link" onClick={() => setNavbarOpen(false)}>Accès / Contact</a>
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
                         { process.env.REACT_APP_DATA_MODE === 'static' ?

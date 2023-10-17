@@ -29,6 +29,7 @@ const HomePage = () => {
         <AboutUs />
         <Tapas />
         <Diapo images={imagesFirstDiapo}/>
+        <div id={"link-to-anchor-link"}></div>
         <Card />
         <HoraireContact/>
         <InfoPractice />
