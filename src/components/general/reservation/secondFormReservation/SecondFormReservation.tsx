@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useContext } from "react";
-import { ReservationContext } from "../../../context/ReservationContext";
+import { ReservationContext } from "../../../../context/ReservationContext";
 import {formateDateChoiceInputText, handleInputChange, submitFormReservation} from "../ReservationService";
 import {checkFormToReserve} from "../ReservationService";
 
 const SecondFormReservation = (formReservation: { setFormReservation: (arg0: number) => void; }) => {
 
-    const { formError, setFormError, formData, setFormData, selectedDate, numberOfPeople, alertSuccessForm, setAlertSuccessForm, setModalReservationOpen, selectHoraire} = useContext(ReservationContext);
+    const { formError, setFormError, formData, setFormData, alertSuccessForm, setAlertSuccessForm, setModalReservationOpen, selectHoraire} = useContext(ReservationContext);
 
     const AlertDiv = ({message, classnameDiv = ""}: { message: string, classnameDiv?: string }) => {
         return (

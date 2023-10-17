@@ -3,12 +3,12 @@ import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import HomePage from "./pages/homePage/HomePage";
 import CardMenuPage from "./pages/cardMenuPage/CardMenuPage";
 import {ReservationContext} from "./context/ReservationContext";
-import Reservation from "./components/reservation/Reservation";
+import Reservation from "./components/general/reservation/Reservation";
 import ImageGalleryPage from "./pages/imageGalleryPage.tsx/ImageGalleryPage";
 import PoliticCookie from "./pages/legalsPage/PoliticCookie";
 import PoliticConfidentiality from "./pages/legalsPage/PoliticConfidentiality";
 import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
-import ScrollToTopAuto from "./components/ScrollToTopAuto";
+import ScrollToTopAuto from "./components/general/ScrollToTopAuto";
 import './styles/index.css';
 import './styles/animations.css';
 

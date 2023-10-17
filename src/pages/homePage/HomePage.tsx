@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from '../../components/navbar/Navbar';
-import Couverture from "./couverture/Couverture";
-import Card from "./card/Card";
-import HoraireContact from "./horaireContact/HoraireContact";
-import Diapo from "./diapo/Diapo";
-import AboutUs from "./aboutUs/AboutUs";
-import NewsletterReserve from "./newsletterReserve/NewsletterReserve";
-import Footer from "../../components/footer/Footer";
+import Navbar from '../../components/general/navbar/Navbar';
+import Couverture from "../../components/homePage/couverture/Couverture";
+import Card from "../../components/homePage/card/Card";
+import HoraireContact from "../../components/homePage/horaireContact/HoraireContact";
+import Diapo from "../../components/homePage/diapo/Diapo";
+import AboutUs from "../../components/homePage/aboutUs/AboutUs";
+import NewsletterReserve from "../../components/homePage/newsletterReserve/NewsletterReserve";
+import Footer from "../../components/general/footer/Footer";
 import './home.css';
 import {images} from "../../assets/images/Image";
-import InfoPractice from "./infoPractice/InfoPractice";
-import Tapas from "./tapas/Tapas";
+import InfoPractice from "../../components/homePage/infoPractice/InfoPractice";
+import Tapas from "../../components/homePage/tapas/Tapas";
 const HomePage = () => {
 
     const imagesFirstDiapo = [

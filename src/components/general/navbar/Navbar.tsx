@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import { ReservationContext } from "../../context/ReservationContext";
-import {NavbarContext} from "../../context/NavbarContext";
+import { ReservationContext } from "../../../context/ReservationContext";
+import {NavbarContext} from "../../../context/NavbarContext";
 import './navbar.css'
-import restaurantInfo from "../../dataBrut/restaurantInfo.json";
+import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 
 const Navbar = () => {
 

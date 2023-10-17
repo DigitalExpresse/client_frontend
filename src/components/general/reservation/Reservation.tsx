@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import FirstFormReservation from "./firstFormReservation/FirstFormReservation";
 import SecondFormReservation from "./secondFormReservation/SecondFormReservation";
-import {ReservationContext} from "../../context/ReservationContext";
+import {ReservationContext} from "../../../context/ReservationContext";
 import './reservation.css';
 
 const Reservation = () => {
