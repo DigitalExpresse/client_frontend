@@ -12,4 +12,4 @@ jobs:
         OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
         OVH_HOSTING_DOMAIN: ssh.clusterXXX.hosting.ovh.net
         REPOSITORY_NAME: client_frontend
-        REPOSITORY_URL: https://github.com/me/my-repo.git
+        REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git
