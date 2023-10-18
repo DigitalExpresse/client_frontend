@@ -11,6 +11,7 @@ import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
 import ScrollToTopAuto from "./components/general/ScrollToTopAuto";
 import './styles/index.css';
 import './styles/animations.css';
+import NotFound from "./pages/NotFound";
 
 function App() {
 
@@ -28,10 +29,10 @@ function App() {
 
         <div>
             {process.env.REACT_APP_DATA_MODE !== "static" && <Reservation/>}
-            <HashRouter>
+            <BrowserRouter>
                 <ScrollToTopAuto/>
                 <Routes>
-                    <Route path="*" element={<HomePage/>}/>
+                    <Route path="*" element={<NotFound/>}/>
                     <Route path="/" element={<HomePage/>}/>
 
                     <Route path="/carte" element={<CardMenuPage/>}/>
@@ -41,7 +42,7 @@ function App() {
                     <Route path={"/politique-confidentialite"} element={<PoliticConfidentiality/>}/>
                     <Route path={"/mentions-legales"} element={<MentionLegalCgu/>}/>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </div>
     );
 }
