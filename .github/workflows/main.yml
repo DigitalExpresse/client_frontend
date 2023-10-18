@@ -13,6 +13,6 @@ jobs:
         env: # Définition des variables d'environnement pour l'action.
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }} # Utilise une variable secrète "OVH_HOSTING_USER" pour l'identifiant OVH.
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }} # Utilise une variable secrète "OVH_HOSTING_PASSWORD" pour le mot de passe OVH.
-          OVH_HOSTING_DOMAIN: ssh.clusterXXX.hosting.ovh.net # Spécifie le domaine de l'hébergement OVH.
+          OVH_HOSTING_DOMAIN: ssh.cluster027.hosting.ovh.net # Spécifie le domaine de l'hébergement OVH.
           REPOSITORY_NAME: client_frontend # Le nom du référentiel à déployer.
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git # L'URL du référentiel source sur GitHub.
