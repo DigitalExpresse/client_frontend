@@ -1,8 +1,8 @@
 import React from 'react';
-import './notFound.css'
+import './notFoundPage.css'
 import {Link} from "react-router-dom";
 
- const NotFound = () => {
+ const NotFoundPage = () => {
     return (
             <div className="bg-purple">
 
@@ -37,4 +37,4 @@ import {Link} from "react-router-dom";
     );
 };
 
-export default NotFound;
+export default NotFoundPage;

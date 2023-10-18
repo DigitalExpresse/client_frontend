@@ -11,7 +11,7 @@ import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
 import ScrollToTopAuto from "./components/general/ScrollToTopAuto";
 import './styles/index.css';
 import './styles/animations.css';
-import NotFound from "./pages/NotFound";
+import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
             <BrowserRouter>
                 <ScrollToTopAuto/>
                 <Routes>
-                    <Route path="*" element={<NotFound/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                     <Route path="/" element={<HomePage/>}/>
 
                     <Route path="/carte" element={<CardMenuPage/>}/>

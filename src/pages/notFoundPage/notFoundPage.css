@@ -84,7 +84,7 @@
 
 }
 
-ul {
+.bg-purple ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -93,12 +93,12 @@ ul {
     align-items: center;
 }
 
-li {
+.bg-purple li {
     float: left;
     padding: 0px 15px;
 }
 
-li a {
+.bg-purple li a {
     display: block;
     color: white;
     text-align: center;
@@ -113,7 +113,7 @@ li a {
     transition: all 0.3s ease-in;
 }
 
-li a:hover {
+.bg-purple li a:hover {
     color: #ffcb39;
 }
 
