@@ -1,15 +1,18 @@
-on: [push]
+on: [push] # Déclenche l'action en réponse à un événement "push" dans le référentiel GitHub.
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deploy my nice code
-    steps:
-    - name: Deploy to OVH hosting
-      uses: pitscher/ovh-deploy-hosting-action@v1
-      env:
-        OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
-        OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
-        OVH_HOSTING_DOMAIN: ssh.clusterXXX.hosting.ovh.net
-        REPOSITORY_NAME: client_frontend
-        REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git
+  deploy: # Définition d'un job nommé "deploy".
+    runs-on: ubuntu-latest # Spécifie que ce job s'exécutera sur une machine virtuelle Ubuntu.
+
+    name: Deploy my nice code # Donne un nom lisible au job.
+
+    steps: # Définition des étapes à suivre dans ce job.
+      - name: Deploy to OVH hosting # Étape de déploiement vers l'hébergement OVH.
+        uses: pitscher/ovh-deploy-hosting-action@v1 # Utilise l'action "ovh-deploy-hosting-action" de la version 1 du référentiel "pitscher".
+
+        env: # Définition des variables d'environnement pour l'action.
+          OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }} # Utilise une variable secrète "OVH_HOSTING_USER" pour l'identifiant OVH.
+          OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }} # Utilise une variable secrète "OVH_HOSTING_PASSWORD" pour le mot de passe OVH.
+          OVH_HOSTING_DOMAIN: ssh.clusterXXX.hosting.ovh.net # Spécifie le domaine de l'hébergement OVH.
+          REPOSITORY_NAME: client_frontend # Le nom du référentiel à déployer.
+          REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git # L'URL du référentiel source sur GitHub.
