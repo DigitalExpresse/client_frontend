@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {Routes, Route, BrowserRouter, HashRouter} from 'react-router-dom';
 import HomePage from "./pages/homePage/HomePage";
 import CardMenuPage from "./pages/cardMenuPage/CardMenuPage";
 import {ReservationContext} from "./context/ReservationContext";
@@ -28,7 +28,7 @@ function App() {
 
         <div>
             {process.env.REACT_APP_DATA_MODE !== "static" && <Reservation/>}
-            <BrowserRouter>
+            <HashRouter>
                 <ScrollToTopAuto/>
                 <Routes>
                     <Route path="*" element={<HomePage/>}/>
@@ -41,7 +41,7 @@ function App() {
                     <Route path={"/politique-confidentialite"} element={<PoliticConfidentiality/>}/>
                     <Route path={"/mentions-legales"} element={<MentionLegalCgu/>}/>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
