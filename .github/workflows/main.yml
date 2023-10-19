@@ -8,6 +8,9 @@ jobs:
 
     steps: # Définition des étapes à suivre dans ce job.
 
+      - name: Checkout # Étape de récupération du code source.
+        uses: actions/checkout@v2 # Utilise l'action "checkout" de la version 2 du référentiel "actions".
+
       - name: Deploy to OVH hosting # Étape de déploiement vers l'hébergement OVH.
         uses: pitscher/ovh-deploy-hosting-action@v1 # Utilise l'action "ovh-deploy-hosting-action" de la version 1 du référentiel "pitscher".
 
