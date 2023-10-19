@@ -4,6 +4,12 @@
 # shellcheck disable=SC1090
 source ~/.nvm/nvm.sh
 
+# shellcheck disable=SC2164
+rm .env
+
+# Copie du fichier .env
+cp ../.env ./.env
+
 git pull
 
 npm install
