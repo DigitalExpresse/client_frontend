@@ -7,6 +7,7 @@ jobs:
     name: Deploy my nice code # Donne un nom lisible au job.
 
     steps: # Définition des étapes à suivre dans ce job.
+
       - name: Deploy to OVH hosting # Étape de déploiement vers l'hébergement OVH.
         uses: pitscher/ovh-deploy-hosting-action@v1 # Utilise l'action "ovh-deploy-hosting-action" de la version 1 du référentiel "pitscher".
 
@@ -16,3 +17,9 @@ jobs:
           OVH_HOSTING_DOMAIN: ssh.cluster027.hosting.ovh.net # Spécifie le domaine de l'hébergement OVH.
           REPOSITORY_NAME: client_frontend # Le nom du référentiel à déployer.
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git # L'URL du référentiel source sur GitHub.
+
+
+      - name: install dependencies # Étape d'installation des dépendances.
+        run: source ~/.nvm/nvm.sh && npm install && npm run build # Exécute les commandes "npm install" et "npm run build".
+
+
