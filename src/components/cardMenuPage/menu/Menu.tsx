@@ -29,7 +29,7 @@ const Menu = ({menuData}: any) => {
             <section
                 className="bg-bgGray rounded-md font-extrabold text-center flex flex-col justify-center pt-12 pb-8 px-4 md:!px-16 lg:!px-44 mx-3 my-4 md:!mx-8 !scroll-smooth">
                 <h2 className="text-xl md:text-2xl mb-4 uppercase self-center">{menuData.name} {menuData.price}€</h2>
-                <p className={"mb-8"}>{menuData.description}</p>
+                <p className={"mb-8 text-grayLight"}>{menuData.description}</p>
                 {!hasCategories && !isFirstCategoryNull ? (
                     <p className={"text-xl"}>A venir ..</p>
                 ) : (
