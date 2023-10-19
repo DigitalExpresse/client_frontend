@@ -23,8 +23,9 @@ jobs:
         run: echo ::set-output name=deploy-success::true
         if: ${{ success() }}
 
-      - name: Show current directory
+      - name: Install dependencies and build
         run: |
+          source ~/.nvm/nvm.sh
           pwd
           npm install
           npm run build
