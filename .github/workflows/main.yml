@@ -21,6 +21,8 @@ jobs:
 
       - name: install dependencies and build
         run: |
+          ls
+          cd client_frontend
           source ~/.nvm/nvm.sh
           npm install
           npm run build
