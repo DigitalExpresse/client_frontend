@@ -5,7 +5,7 @@
 source ~/.nvm/nvm.sh
 
 # shellcheck disable=SC2164
-cd client_frontend && rm .env
+rm .env
 
 git pull
 
