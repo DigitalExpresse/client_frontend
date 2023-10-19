@@ -18,7 +18,7 @@ jobs:
           REPOSITORY_NAME: client_frontend
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git
 
-      - name: Check previous step result az
+      - name: Check previous step result
         id: check_result
         run: echo ::set-output name=deploy-success::true
         if: ${{ success() }}
@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           source ~/.nvm/nvm.sh
+          cd client_frontend  # Change directory to the correct path
           npm install
           npm run build
         if: steps.check_result.outputs.deploy-success == 'true'
