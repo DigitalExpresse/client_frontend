@@ -18,7 +18,7 @@ jobs:
           REPOSITORY_NAME: client_frontend
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git
 
-      - name: Check previous step result
+      - name: Check previous step result az
         id: check_result
         run: echo ::set-output name=deploy-success::true
         if: ${{ success() }}
