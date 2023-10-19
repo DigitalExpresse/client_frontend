@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
                 <div className="central-body">
                     <img className="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px" alt={"chiffre 404 écrit en grand"}/>
                     <Link to="/" className="btn-go-home" target="_blank">RETOUR A L'ACCEUIL</Link>
-                    <p className={"text-not-found"}>La page que vous cherchez n'existe pas ou a été déplacée ...!!.</p>
+                    <p className={"text-not-found"}>La page que vous cherchez n'existe pas ou a été déplacée .!!.</p>
                 </div>
                 <div className="objects">
                     <img className="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px" alt={"fusée qui bouge en arrière plan"}/>
