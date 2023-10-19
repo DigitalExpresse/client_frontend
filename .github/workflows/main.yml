@@ -16,12 +16,3 @@ jobs:
           OVH_HOSTING_DOMAIN: ssh.cluster027.hosting.ovh.net # Spécifie le domaine de l'hébergement OVH.
           REPOSITORY_NAME: client_frontend # Le nom du référentiel à déployer.
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git # L'URL du référentiel source sur GitHub.
-
-      - name: Checkout code # Étape de récupération du code source.
-        uses: actions/checkout@v2 # Utilise l'action "checkout" de la version 2 du référentiel "actions".
-
-      - name: Install dependencies # Étape d'installation des dépendances.
-        run: npm install # Exécute la commande "npm install" pour installer les dépendances du projet.
-
-      - name: Build project # Étape de construction du projet.
-        run: npm run build # Exécute la commande "npm run build" pour construire le projet.
