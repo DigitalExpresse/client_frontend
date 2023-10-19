@@ -27,8 +27,8 @@ jobs:
         run: |
           source ~/.nvm/nvm.sh
           pwd
+          ls -la
           ls -a
-          cd client_frontend
           npm install
           npm run build
         if: steps.check_result.outputs.deploy-success == 'true'
