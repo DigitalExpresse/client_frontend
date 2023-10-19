@@ -19,7 +19,13 @@ jobs:
           REPOSITORY_URL: https://github.com/DigitalExpresse/client_frontend.git # L'URL du référentiel source sur GitHub.
 
 
-      - name: install dependencies # Étape d'installation des dépendances.
-        run: source ~/.nvm/nvm.sh && npm install && npm run build # Exécute les commandes "npm install" et "npm run build".
+      - name: install dependencies and build
+        run: |
+          source ~/.nvm/nvm.sh
+          npm install
+          npm run build
+        
+
+    
 
 
