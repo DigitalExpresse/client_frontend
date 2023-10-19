@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Fonction pour générer un nombre aléatoire entre 1 et 10000
-getRandomNumber() {
-  echo $((1 + $RANDOM % 10000))
-}
-
 # Chemin du dossier client_frontend
 sourceDirectory="./client_frontend"
 
