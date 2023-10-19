@@ -26,7 +26,6 @@ jobs:
       - name: Show current directory
         run: |
           pwd
-          cd client_frontend
           npm install
           npm run build
         if: steps.check_result.outputs.deploy-success == 'true'
