@@ -8,22 +8,19 @@ getRandomNumber() {
 # Chemin du dossier client_frontend
 sourceDirectory="./client_frontend"
 
-# Nouveau nom pour le dossier (todelete + nombre aléatoire)
-randomNum=$(getRandomNumber)
-newDirectoryName="todelete$randomNum"
 
-# Renommer le dossier client_frontend
-mv "$sourceDirectory" "$newDirectoryName"
+# Supprimer le dossier client_frontend
+rm -rf "$sourceDirectory"
 if [ $? -ne 0 ]; then
-  echo "Erreur lors du renommage du dossier"
+  echo "Erreur lors du supprimage du dossier"
   exit 1
 fi
 
-echo "Le dossier $sourceDirectory a été renommé en $newDirectoryName"
+echo "Le dossier $sourceDirectory a été supprimer"
 
 # Cloner le dépôt Git
 gitRepoURL="https://github.com/DigitalExpresse/client_frontend.git" # Remplacez par l'URL de votre repo Git
-git clone "$gitRepoURL" "$sourceDirectory"
+git clone "$gitRepoURL"
 if [ $? -ne 0 ]; then
   echo "Erreur lors du clonage du dépôt Git"
   exit 1
