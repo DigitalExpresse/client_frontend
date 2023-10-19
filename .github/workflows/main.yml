@@ -27,6 +27,7 @@ jobs:
         run: |
           source ~/.nvm/nvm.sh
           cd ../
+          ls -a
           pwd
           npm install
           npm run build
