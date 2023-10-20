@@ -14,7 +14,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Copie du fichier .env
-cp ../.env ./.env
+cp ../.env ./client_frontend/.env
 
 # Verifie si le fichier .env a été copié
 if [ $? -ne 0 ]; then
