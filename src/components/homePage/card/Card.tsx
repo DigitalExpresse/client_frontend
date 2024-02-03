@@ -10,7 +10,7 @@ const Card = () => {
     return (
             <section className="section-card w-full text-white my-3 px-3 md:!px-8 flex flex-col-reverse sm:flex-row-reverse relative">
 
-                <article className="menu-img w-full sm:w-1/2 min-h-300px !bg-cover object-cover flex justify-center">
+                <article className="menu-img sm:w-1/2 min-h-300px !bg-cover object-cover flex justify-center w-full sm:w-1/2">
 
                     <Link to={'/carte'} className="px-3 py-1 text-lg m-auto text-center w-60 text-md border border-white relative bg-grayLight text-white transition ease-in-out duration-200 hover:bg-primaire">Découvrir nos cartes</Link>
 

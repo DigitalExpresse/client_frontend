@@ -25,9 +25,11 @@ const NavigationCardsMenus = () => {
     return (
 
         <div className="menu-nav">
-            <div className={'menu-name-nav-div flex xl:justify-center bg-white whitespace-nowrap w-11/12 mx-auto overflow-x-auto uppercase text-md pt-4 pb-3 hover:overflow-x-auto'}>
+            <div className={'menu-name-nav-div flex 2xl:justify-center bg-white whitespace-nowrap w-11/12 mx-auto overflow-x-auto uppercase text-md pt-4 pb-3 hover:overflow-x-auto'}>
                 {renderCardsAndMenuTitleForNavigation(cardsAndMenus, active, setActive)}
-                {process.env.REACT_APP_DATA_MODE === "static" && <a href={process.env.REACT_APP_DOMAIN + "/la_carte_boisson.pdf"} target="_blank" rel="noreferrer" className="font-bold mx-2">Boissons / Alcools</a>}
+                {process.env.REACT_APP_DATA_MODE === "static" && <a href={process.env.REACT_APP_DOMAIN + "/assets/pdf/carte_le_bouddoir.pdf"} target="_blank" rel="noreferrer" className="font-bold mx-2">Carte du restaurant</a>}
+                {process.env.REACT_APP_DATA_MODE === "static" && <a href={process.env.REACT_APP_DOMAIN + "/assets/pdf/carte_la_bodeguita.pdf"} target="_blank" rel="noreferrer" className="font-bold mx-2">Carte la Bodeguita</a>}
+                {process.env.REACT_APP_DATA_MODE === "static" && <a href={process.env.REACT_APP_DOMAIN + "/assets/pdf/la_carte_boisson.pdf"} target="_blank" rel="noreferrer" className="font-bold mx-2">Boissons / Alcools</a>}
             </div>
         </div>
 
