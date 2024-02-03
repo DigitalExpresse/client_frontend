@@ -10,7 +10,7 @@ import {renderCardsElements} from "../../components/cardMenuPage/card/CardServic
 import {renderMenusElements} from "../../components/cardMenuPage/menu/MenuService";
 import {fetchMenus} from "../../components/cardMenuPage/menu/MenuApi";
 import {ListCardMenuPdf} from "../../components/cardMenuPage/listCardMenuPdf/ListCardMenuPdf";
-import api from "../../dataBrut/api.json";
+import api from "../../dataBrut/carte_menu.json";
 import './cardMenuPage.css';
 
 

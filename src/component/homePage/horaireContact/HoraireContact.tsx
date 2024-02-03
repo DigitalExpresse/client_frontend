@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import {renderHoraires} from "./HoraireContactService";
-import api from "../../../dataBrut/api.json";
+import api from "../../../dataBrut/carte_menu.json";
 
 const HoraireContact = () => {
 

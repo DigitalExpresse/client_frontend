@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
+import {renderCardProductsWithCategory} from "./CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
-import api from "../../../dataBrut/api.json";
-import {fetchCategoryByMenuId, fetchMenuProduct} from "./MenuApi";
-import {renderMenuProductsWithCategory} from "./MenuService";
+import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
+import api from "../../../dataBrut/carte_menu.json";
+import "./card.css";
 
-const Menu = ({menuData}: any) => {
-    const [menuProducts, setMenuProducts] = useState<any>([]);
+const Card = ({cardData}: any) => {
+    const [cardProducts, setCardProducts] = useState<any>([]);
     const [categories, setCategories] = useState<any>([]);
 
     const hasCategories = categories.length > 0;
@@ -13,23 +14,22 @@ const Menu = ({menuData}: any) => {
 
     useEffect(() => {
         if (process.env.REACT_APP_DATA_MODE === "static") {
-            setMenuProducts(api.menusProduct);
-            setCategories(api.menus.filter((menu: any) => menu.id === menuData.id)[0].categories);
+            setCardProducts(api.cardsProduct);
+            setCategories(api.cards.filter((card: any) => card.id === cardData.id)[0].categories);
             return;
         } else {
-            fetchMenuProduct().then((data) => setMenuProducts(data));
-            fetchCategoryByMenuId(menuData.id).then((data) => setCategories(data));
+            fetchCardProduct().then((data) => setCardProducts(data));
+            fetchCategoryByCardId(cardData.id).then((data) => setCategories(data));
             return;
         }
-
-    }, [menuData, menuProducts.length, categories.length]);
+    }, [cardData.id]);
 
     return (
-        <div id={`${menuData.name}`} className="boxShadow">
+        <div id={`${cardData.name}`} className="boxShadow">
             <section
                 className="bg-bgGray rounded-md font-extrabold text-center flex flex-col justify-center pt-12 pb-8 px-4 md:!px-16 lg:!px-44 mx-3 my-4 md:!mx-8 !scroll-smooth">
-                <h2 className="text-xl md:text-2xl mb-8 uppercase self-center">{menuData.name} {menuData.price}€</h2>
-                <p className={"mb-8 text-grayLight"}>{menuData.description}</p>
+                <h2 className="text-xl md:text-2xl mb-4 md:!mb-10 uppercase self-center">{cardData.name}</h2>
+                <p className="card-description">{cardData.description}</p>
                 {!hasCategories && !isFirstCategoryNull ? (
                     <p className={"text-xl"}>A venir ..</p>
                 ) : (
@@ -38,15 +38,15 @@ const Menu = ({menuData}: any) => {
                     categories.map((category: any) => (
                         <div key={category.category.id}>
                             <h3 className="text-xl text-tertiary md:self-start mb-4">{category.category.name}</h3>
-                            <div>{renderMenuProductsWithCategory(menuProducts, menuData, category)}</div>
+                            <div>{renderCardProductsWithCategory(cardProducts, cardData, category)}</div>
                         </div>
                     ))
                 )}
 
-                {hasCategories && isFirstCategoryNull && renderProductsWithoutCategory(menuProducts, menuData)}
+                {hasCategories && isFirstCategoryNull && renderProductsWithoutCategory(cardProducts, cardData)}
             </section>
         </div>
     );
 };
 
-export default Menu;
+export default Card;

@@ -1,17 +1,17 @@
 import React, {useContext, useEffect} from 'react';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
-import HomePage from "./pages/homePage/HomePage";
-import CardMenuPage from "./pages/cardMenuPage/CardMenuPage";
+import HomePage from "./component/homePage/HomePage";
+import CardMenuPage from "./component/cardMenuPage/CardMenuPage";
 import {ReservationContext} from "./context/ReservationContext";
 import Reservation from "./components/commonComponent/reservation/Reservation";
-import ImageGalleryPage from "./pages/imageGalleryPage.tsx/ImageGalleryPage";
-import PoliticCookie from "./pages/legalsPage/PoliticCookie";
-import PoliticConfidentiality from "./pages/legalsPage/PoliticConfidentiality";
-import MentionLegalCgu from "./pages/legalsPage/MentionLegalCgu";
+import ImageGalleryPage from "./component/imageGalleryPage.tsx/ImageGalleryPage";
+import PoliticCookie from "./component/legalsPage/PoliticCookie";
+import PoliticConfidentiality from "./component/legalsPage/PoliticConfidentiality";
+import MentionLegalCgu from "./component/legalsPage/MentionLegalCgu";
 import ScrollToTopAuto from "./components/commonComponent/ScrollToTopAuto";
 import './styles/index.css';
 import './styles/animations.css';
-import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
+import NotFoundPage from "./component/notFoundPage/NotFoundPage";
 
 function App() {
 

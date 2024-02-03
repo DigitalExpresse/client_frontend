@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from "react";
-import {renderCardProductsWithCategory} from "./CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
-import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
-import api from "../../../dataBrut/api.json";
-import "./card.css";
+import api from "../../../dataBrut/carte_menu.json";
+import {fetchCategoryByMenuId, fetchMenuProduct} from "./MenuApi";
+import {renderMenuProductsWithCategory} from "./MenuService";
 
-const Card = ({cardData}: any) => {
-    const [cardProducts, setCardProducts] = useState<any>([]);
+const Menu = ({menuData}: any) => {
+    const [menuProducts, setMenuProducts] = useState<any>([]);
     const [categories, setCategories] = useState<any>([]);
 
     const hasCategories = categories.length > 0;
@@ -14,22 +13,23 @@ const Card = ({cardData}: any) => {
 
     useEffect(() => {
         if (process.env.REACT_APP_DATA_MODE === "static") {
-            setCardProducts(api.cardsProduct);
-            setCategories(api.cards.filter((card: any) => card.id === cardData.id)[0].categories);
+            setMenuProducts(api.menusProduct);
+            setCategories(api.menus.filter((menu: any) => menu.id === menuData.id)[0].categories);
             return;
         } else {
-            fetchCardProduct().then((data) => setCardProducts(data));
-            fetchCategoryByCardId(cardData.id).then((data) => setCategories(data));
+            fetchMenuProduct().then((data) => setMenuProducts(data));
+            fetchCategoryByMenuId(menuData.id).then((data) => setCategories(data));
             return;
         }
-    }, [cardData.id]);
+
+    }, [menuData, menuProducts.length, categories.length]);
 
     return (
-        <div id={`${cardData.name}`} className="boxShadow">
+        <div id={`${menuData.name}`} className="boxShadow">
             <section
                 className="bg-bgGray rounded-md font-extrabold text-center flex flex-col justify-center pt-12 pb-8 px-4 md:!px-16 lg:!px-44 mx-3 my-4 md:!mx-8 !scroll-smooth">
-                <h2 className="text-xl md:text-2xl mb-4 md:!mb-10 uppercase self-center">{cardData.name}</h2>
-                <p className="card-description">{cardData.description}</p>
+                <h2 className="text-xl md:text-2xl mb-8 uppercase self-center">{menuData.name} {menuData.price}€</h2>
+                <p className={"mb-8 text-grayLight"}>{menuData.description}</p>
                 {!hasCategories && !isFirstCategoryNull ? (
                     <p className={"text-xl"}>A venir ..</p>
                 ) : (
@@ -38,15 +38,15 @@ const Card = ({cardData}: any) => {
                     categories.map((category: any) => (
                         <div key={category.category.id}>
                             <h3 className="text-xl text-tertiary md:self-start mb-4">{category.category.name}</h3>
-                            <div>{renderCardProductsWithCategory(cardProducts, cardData, category)}</div>
+                            <div>{renderMenuProductsWithCategory(menuProducts, menuData, category)}</div>
                         </div>
                     ))
                 )}
 
-                {hasCategories && isFirstCategoryNull && renderProductsWithoutCategory(cardProducts, cardData)}
+                {hasCategories && isFirstCategoryNull && renderProductsWithoutCategory(menuProducts, menuData)}
             </section>
         </div>
     );
 };
 
-export default Card;
+export default Menu;

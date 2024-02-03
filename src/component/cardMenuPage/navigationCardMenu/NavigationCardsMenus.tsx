@@ -1,6 +1,6 @@
 import React from 'react';
 import './navigationCardMenu.css'
-import api from "../../../dataBrut/api.json";
+import api from "../../../dataBrut/carte_menu.json";
 import {fetchCards} from "../card/CardApi";
 import {fetchMenus} from "../menu/MenuApi";
 import {renderCardsAndMenuTitleForNavigation} from "./NavigationCardsService";
