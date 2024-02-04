@@ -16,7 +16,7 @@ const Diapo = (images: any) => {
                         images.images.map((image: any, index: number) => {
                             return (
                                 <div key={index}>
-                                    <img className="object-cover" alt="Un plat : saumon d'alaska" src={image}/>
+                                    <img className="object-cover rounded" alt="Un plat : saumon d'alaska" src={image}/>
                                 </div>
                             )
                         })
@@ -28,7 +28,7 @@ const Diapo = (images: any) => {
                 {
                     images.images.map((image: any, index: number) => {
                         return (
-                            <img key={index} className="scroll-element h-60 xl:h-96 w-1/2 md:!w-1/4 object-cover" alt="Un plat : saumon d'alaska" src={image}/>
+                            <img key={index} className="scroll-element h-60 xl:h-96 w-1/2 md:!w-1/4 object-cover rounded" alt="Un plat : saumon d'alaska" src={image}/>
                         )
                     })
                 }

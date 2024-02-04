@@ -4,9 +4,9 @@ import './infoPractice.css';
 const InfoPractice = () => {
     return (
 
-        <section className="section-card text-white my-4 px-3 md:!px-8 flex flex-col md:flex-row-reverse relative">
+        <section className="section-card text-white my-4 px-3 md:!px-8 flex flex-col md:flex-row-reverse gap-3 relative">
 
-            <article className="bg-secondaire px-3 py-6 min-h-100px sm:min-h-150px md:w-1/2">
+            <article className="bg-secondaire px-3 py-6 min-h-100px sm:min-h-150px rounded md:w-1/2">
                 <h2 className="text-center text-xl pb-2 sm:text-3xl">Infos pratiques</h2>
                 <hr className="w-40 m-auto"/>
                 <div className="text-center py-3 px-4  lg:!px-10 text-white opacity-70">
@@ -28,7 +28,7 @@ const InfoPractice = () => {
                 </div>
             </article>
 
-            <article className="infoPractice-img min-h-200px !bg-cover object-cover flex justify-center w-full md:w-1/2"></article>
+            <article className="infoPractice-img min-h-200px !bg-cover object-cover flex justify-center w-full md:w-1/2 rounded"></article>
 
         </section>
     );

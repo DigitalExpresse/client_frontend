@@ -32,9 +32,9 @@ const Navbar = () => {
                     </div>
 
                     { process.env.REACT_APP_DATA_MODE === 'static' ?
-                        <a href={"tel:" + restaurantInfo.telNumber} className="uppercase mx-3 border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
+                        <a href={"tel:" + restaurantInfo.telNumber} className="uppercase mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
                         :
-                        <button onClick={() => setModalReservationOpen(true)} className="mx-3 border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
+                        <button onClick={() => setModalReservationOpen(true)} className="mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
                     }
 
                     <i className={!navbarOpen ? "bi bi-list text-3xl hover:cursor-pointer sm:hidden" : "hidden"} onClick={() => setNavbarOpen(!navbarOpen)}></i>
@@ -56,12 +56,12 @@ const Navbar = () => {
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
                         { process.env.REACT_APP_DATA_MODE === 'static' ?
-                            <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
+                            <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto rounded w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
                             :
                             <button onClick={() => {
                                 setModalReservationOpen(true)
                                 setNavbarOpen(false)
-                            }} className="mx-3 w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 tracking-widest">Reservez</button>
+                            }} className="mx-3 w-36 rounded border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 tracking-widest">Reservez</button>
                         }
                     </div>
 

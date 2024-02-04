@@ -2,6 +2,7 @@ import React, {useEffect, useContext, useState} from 'react';
 import './firstFormReservation.css';
 import {getAvailableHours, handleDateChange, handleSelectChange} from "../ReservationService";
 import {ReservationContext} from "../../../context/ReservationContext";
+import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 
 const AvailableHourButton = ({ date, setFormReservation }: any ) => {
 
@@ -65,7 +66,7 @@ const FirstFormReservation = ({ setFormReservation }: any) => {
                 <p className="text-center text-white">Pour réserver c'est ici</p>
                 <p className="text-center mb-2 text-white">Cela vous prendra moins d'une minute ! 🚀 </p>
                 <p className="text-center text-white mb-3 max-w-sm">
-                    Au delà de 10 couverts, veuillez nous contacter par téléphone <b>au 01 02 03 04 05</b>
+                    Au delà de 10 couverts, veuillez nous contacter par téléphone au <b><a href={`tel:${restaurantInfo.telNumber}`}>{restaurantInfo.telNumber}</a></b>
                 </p>
                 <div className="flex flex-col md:flex-row">
                     <div className="relative m-1 fadeIn">
