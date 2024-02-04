@@ -1,17 +1,17 @@
-import React, {useContext, useEffect} from 'react';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {useContext, useEffect} from "react";
+import {ReservationContext} from "./context/ReservationContext";
+import Reservation from "./commonComponent/reservation/Reservation";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ScrollToTopAuto from "./commonComponent/scrollToTopOfPage/ScrollToTopAuto";
+import NotFoundPage from "./component/notFoundPage/NotFoundPage";
 import HomePage from "./component/homePage/HomePage";
 import CardMenuPage from "./component/cardMenuPage/CardMenuPage";
-import {ReservationContext} from "./context/ReservationContext";
-import Reservation from "./components/commonComponent/reservation/Reservation";
 import ImageGalleryPage from "./component/imageGalleryPage.tsx/ImageGalleryPage";
 import PoliticCookie from "./component/legalsPage/PoliticCookie";
 import PoliticConfidentiality from "./component/legalsPage/PoliticConfidentiality";
 import MentionLegalCgu from "./component/legalsPage/MentionLegalCgu";
-import ScrollToTopAuto from "./components/commonComponent/ScrollToTopAuto";
 import './styles/index.css';
 import './styles/animations.css';
-import NotFoundPage from "./component/notFoundPage/NotFoundPage";
 
 function App() {
 

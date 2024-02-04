@@ -1,16 +1,16 @@
-import React from 'react';
-import Navbar from '../../components/commonComponent/navbar/Navbar';
-import Couverture from "../../components/homePage/couverture/Couverture";
-import Card from "../../components/homePage/card/Card";
-import HoraireContact from "../../components/homePage/horaireContact/HoraireContact";
-import Diapo from "../../components/homePage/diapo/Diapo";
-import AboutUs from "../../components/homePage/aboutUs/AboutUs";
-import NewsletterReserve from "../../components/homePage/newsletterReserve/NewsletterReserve";
-import Footer from "../../components/commonComponent/footer/Footer";
-import './home.css';
 import {images} from "../../assets/images/Image";
-import InfoPractice from "../../components/homePage/infoPractice/InfoPractice";
-import Tapas from "../../components/homePage/tapas/Tapas";
+import Navbar from "../../commonComponent/navbar/Navbar";
+import Couverture from "./couverture/Couverture";
+import AboutUs from "./aboutUs/AboutUs";
+import Tapas from "./tapas/Tapas";
+import Diapo from "./diapo/Diapo";
+import HoraireContact from "./horaireContact/HoraireContact";
+import InfoPractice from "./infoPractice/InfoPractice";
+import NewsletterReserve from "./newsletterReserve/NewsletterReserve";
+import Footer from "../../commonComponent/footer/Footer";
+import CardSection from "./cardSection/CardSection";
+import './homePage.css';
+
 const HomePage = () => {
 
     const imagesFirstDiapo = [
@@ -32,7 +32,7 @@ const HomePage = () => {
         {/*On place l'id horaires pour qu'au clic sur le bouton de la navbar, on puisse scroller jusqu'à cette div
         car sinon ca n'atterit pas au bon endroit ( a cause de la couverture qui est en position absolute)*/}
         <div id={"horaires"}></div>
-        <Card />
+        <CardSection />
         <HoraireContact/>
         <InfoPractice />
         <NewsletterReserve />

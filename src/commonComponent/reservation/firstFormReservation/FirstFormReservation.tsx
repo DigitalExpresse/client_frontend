@@ -1,7 +1,7 @@
 import React, {useEffect, useContext, useState} from 'react';
 import './firstFormReservation.css';
 import {getAvailableHours, handleDateChange, handleSelectChange} from "../ReservationService";
-import { ReservationContext } from "../../../../context/ReservationContext";
+import {ReservationContext} from "../../../context/ReservationContext";
 
 const AvailableHourButton = ({ date, setFormReservation }: any ) => {
 

@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
-import { ReservationContext } from "../../../context/ReservationContext";
-import {NavbarContext} from "../../../context/NavbarContext";
-import './navbar.css'
-import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
-import {linkScrollToElementOnOtherPage} from "../../../utils/linkScrollToElementOnOtherPage";
+import {useContext} from "react";
+import {NavbarContext} from "../../context/NavbarContext";
+import {ReservationContext} from "../../context/ReservationContext";
 import {Link} from "react-router-dom";
+import {linkScrollToElementOnOtherPage} from "../../utils/linkScrollToElementOnOtherPage";
+import restaurantInfo from "../../dataBrut/restaurantInfo.json";
 
 
 const Navbar = () => {

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useContext } from "react";
-import { ReservationContext } from "../../../../context/ReservationContext";
 import {formateDateChoiceInputText, handleInputChange, submitFormReservation} from "../ReservationService";
 import {checkFormToReserve} from "../ReservationService";
+import {ReservationContext} from "../../../context/ReservationContext";
 
 const SecondFormReservation = (formReservation: { setFormReservation: (arg0: number) => void; }) => {
 

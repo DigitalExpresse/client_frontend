@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import {handleClick, handleCloseModal, handleNext, handlePrev} from './ImageGalleryService';
-import Navbar from "../../components/commonComponent/navbar/Navbar";
-import NewsletterReserve from "../../components/homePage/newsletterReserve/NewsletterReserve";
-import Footer from "../../components/commonComponent/footer/Footer";
-import { images } from "../../assets/images/Image";
-import './imageGallery.css';
-import ScrollToTopButton from "../../components/commonComponent/ScrollToTopButton";
+import {useEffect, useState} from "react";
+import {handleClick, handleCloseModal, handleNext, handlePrev} from "./ImageGalleryService";
+import Navbar from "../../commonComponent/navbar/Navbar";
 import img from "../../assets/images/_X5A3335.webp";
+import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
+import Footer from "../../commonComponent/footer/Footer";
+import ScrollToTopButton from "../../commonComponent/scrollToTopOfPage/ScrollToTopButton";
+import {images} from "../../assets/images/Image";
+import './imageGallery.css';
 
 const ImageGalleryPage = () => {
 

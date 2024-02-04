@@ -6,8 +6,6 @@ import './listCardMenuPdf.css';
 
 const MenuCard = ({ title, imagePath, pdfPath }: any) => {
 
-    console.log("pdfPath", pdfPath)
-    console.log("imagePath", imagePath)
     const handleClick = () => {
         window.open(pdfPath, '_blank');
     };

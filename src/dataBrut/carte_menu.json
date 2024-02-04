@@ -1,9 +1,4 @@
 {
-  "openingHours": [
-    {"label": "Lundi-Vendredi", "horaires": ["08:00", "02:00"]},
-    {"label": "Samedi-Dimanche", "horaires": ["08:00", "02:00"]}
-  ],
-
   "menus": [
     {
       "id": 6,

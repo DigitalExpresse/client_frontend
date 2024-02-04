@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {renderCardProductsWithCategory} from "./CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
 import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
-import api from "../../../dataBrut/carte_menu.json";
+import carte_menu from "../../../dataBrut/carte_menu.json";
 import "./card.css";
 
 const Card = ({cardData}: any) => {
@@ -14,8 +14,8 @@ const Card = ({cardData}: any) => {
 
     useEffect(() => {
         if (process.env.REACT_APP_DATA_MODE === "static") {
-            setCardProducts(api.cardsProduct);
-            setCategories(api.cards.filter((card: any) => card.id === cardData.id)[0].categories);
+            setCardProducts(carte_menu.cardsProduct);
+            setCategories(carte_menu.cards.filter((card: any) => card.id === cardData.id)[0].categories);
             return;
         } else {
             fetchCardProduct().then((data) => setCardProducts(data));

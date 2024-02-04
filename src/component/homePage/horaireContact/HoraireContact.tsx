@@ -1,14 +1,14 @@
 import React, {useEffect} from 'react';
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import {renderHoraires} from "./HoraireContactService";
-import api from "../../../dataBrut/carte_menu.json";
+import openningHours from "../../../dataBrut/openningHours.json";
 
 const HoraireContact = () => {
 
     const [horaires, setHoraires]: any[] = React.useState([]);
 
     useEffect(() => {
-        setHoraires(api.openingHours);
+        setHoraires(openningHours.openingHours);
         // fetchOpeningHours().then(data => {
         //     setHoraires();
         //     console.log(horaires)
