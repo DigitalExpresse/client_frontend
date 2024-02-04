@@ -1,7 +1,6 @@
 import {Key, useEffect, useState} from "react";
 import {handleClick, handleCloseModal, handleNext, handlePrev} from "./ImageGalleryService";
 import Navbar from "../../commonComponent/navbar/Navbar";
-import img from "../../assets/images/_X5A3335.webp";
 import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
 import Footer from "../../commonComponent/footer/Footer";
 import ScrollToTopButton from "../../commonComponent/scrollToTopOfPage/ScrollToTopButton";
@@ -15,6 +14,7 @@ const ImageGalleryPage = () => {
     // @ts-ignore
     const images = require.context('../../assets/images', false, /\.(png|jpe?g|svg|webp)$/);
     const imageList = images.keys().map((image: any) => images(image));
+    const couvertureImg = require('../../assets/images/couvertureImageGallery.webp');
 
     useEffect(() => {
         const handleOutsideClick = (event: any) => {
@@ -36,7 +36,7 @@ const ImageGalleryPage = () => {
 
             <div className="couverture">
                 <img className={"couverture-img"}
-                     loading="eager" src={img} alt={"Couverture qui illustre une de nos salade"}/>
+                     loading="eager" src={couvertureImg} alt="Couverture de la page galerie"/>
                 <h2 className={"couverture-title"}>Nos photos</h2>
             </div>
 

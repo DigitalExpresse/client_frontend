@@ -1,5 +1,4 @@
 import React from 'react';
-import './infoPractice.css';
 
 const InfoPractice = () => {
 

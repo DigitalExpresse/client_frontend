@@ -12,10 +12,6 @@ export const handleNext = (images: string[], selectedImage: string, setSelectedI
     setSelectedImageClass('fade-in'); // Ajoutez la classe fade-in
 };
 
-export const handleClose = (setSelectedImage: React.Dispatch<React.SetStateAction<string>>) => {
-    setSelectedImage('');
-};
-
 export const handleClick = (image: string | undefined , setSelectedImage: React.Dispatch<React.SetStateAction<string | undefined>>) => {
     setSelectedImage(image);
 };
