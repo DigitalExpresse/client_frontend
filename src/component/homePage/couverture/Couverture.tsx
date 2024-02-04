@@ -7,9 +7,15 @@ import textSection from "../../../dataBrut/textSection.json";
 const Couverture = () => {
 
     const { setModalReservationOpen } = useContext(ReservationContext);
+    // @ts-ignore
+    const imagesDiapo = require.context('../../../assets/images', false, /couverture.*\.(png|jpe?g|svg|webp)$/);
+    const image = imagesDiapo.keys().map((image: any) => imagesDiapo(image))[0];
 
     return (
-        <section className="background-couverture rounded relative top-12 mx-3 md:!mx-8 font-extrabold" id="home">
+        <section
+            className={"background-couverture rounded relative top-12 mx-3 md:!mx-8 font-extrabold" + (image !== undefined ? " bg-[url('../assets/images/couverture.webp')]" : "")}
+            id="home"
+        >
 
             <div className="text-white flex flex-col items-center relative top-1/3 text-center justify-center m-auto w-11/12 md:items-start md:justify-start md:m-0 ">
                 <h1 className="text-4xl md:text-5xl lg:text-7xl mb-12">{restaurantInfo.name}</h1>

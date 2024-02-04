@@ -1,4 +1,3 @@
-import {images} from "../../assets/images/Image";
 import Navbar from "../../commonComponent/navbar/Navbar";
 import Couverture from "./couverture/Couverture";
 import AboutUs from "./aboutUs/AboutUs";
@@ -13,14 +12,10 @@ import './homePage.css';
 
 const HomePage = () => {
 
-    const imagesFirstDiapo = [
-        images.find((image: any) => image.includes('_X5A3395')),
-        images.find((image: any) => image.includes('_X5A3467')),
-        images.find((image: any) => image.includes('_X5A3428')),
-        images.find((image: any) => image.includes('_X5A3373')),
-        images.find((image: any) => image.includes('_X5A3286')),
-        images.find((image: any) => image.includes('_X5A3363')),
-    ]
+    // @ts-ignore
+    //on va chercher toutes les images dans le dossier assets/images, qui ont une extension png, jpeg, svg ou webp et qui commence par diapo
+    const imagesDiapo = require.context('../../assets/images', false, /diapo.*\.(png|jpe?g|svg|webp)$/);
+    const imageDiapoList = imagesDiapo.keys().map((image: any) => imagesDiapo(image));
 
     return (
     <div>
@@ -33,7 +28,7 @@ const HomePage = () => {
         <div id={"horaires"}></div>
         <CardSection />
         <HoraireContact/>
-        <Diapo images={imagesFirstDiapo}/>
+        <Diapo images={imageDiapoList}/>
         <InfoPractice />
         <NewsletterReserve />
         <Footer />

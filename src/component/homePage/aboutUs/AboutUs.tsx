@@ -1,8 +1,12 @@
 import React from "react";
-import img from '../../../assets/images/_X5A3467.webp'
 import textSection from "../../../dataBrut/textSection.json";
 
 const AboutUs = () => {
+
+    // @ts-ignore
+    const imagesDiapo = require.context('../../../assets/images', false, /aboutUs1.*\.(png|jpe?g|svg|webp)$/);
+    const image = imagesDiapo.keys().map((image: any) => imagesDiapo(image))[0];
+
     return (
         <section className="text-white min-h-300px lg:max-h-350px mt-16 px-3 md:!px-8 flex flex-col relative sm:flex-row gap-3 w-full">
 
@@ -17,7 +21,7 @@ const AboutUs = () => {
             </div>
 
             <div className="sm:w-1/2">
-                <img alt="About us" src={img} className="h-full w-full object-cover flex justify-center rounded"/>
+                <img alt="About us" src={image} className="h-full w-full object-cover flex justify-center rounded"/>
             </div>
 
         </section>

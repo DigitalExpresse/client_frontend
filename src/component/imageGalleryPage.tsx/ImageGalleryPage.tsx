@@ -1,17 +1,20 @@
-import {useEffect, useState} from "react";
+import {Key, useEffect, useState} from "react";
 import {handleClick, handleCloseModal, handleNext, handlePrev} from "./ImageGalleryService";
 import Navbar from "../../commonComponent/navbar/Navbar";
 import img from "../../assets/images/_X5A3335.webp";
 import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
 import Footer from "../../commonComponent/footer/Footer";
 import ScrollToTopButton from "../../commonComponent/scrollToTopOfPage/ScrollToTopButton";
-import {images} from "../../assets/images/Image";
 import './imageGallery.css';
 
 const ImageGalleryPage = () => {
 
-    const [selectedImage, setSelectedImage] = useState('');
+    const [selectedImage, setSelectedImage]: any = useState('');
     const [selectedImageClass, setSelectedImageClass] = useState('');
+
+    // @ts-ignore
+    const images = require.context('../../assets/images', false, /\.(png|jpe?g|svg|webp)$/);
+    const imageList = images.keys().map((image: any) => images(image));
 
     useEffect(() => {
         const handleOutsideClick = (event: any) => {
@@ -33,12 +36,12 @@ const ImageGalleryPage = () => {
 
             <div className="couverture">
                 <img className={"couverture-img"}
-                     loading="eager"  src={img} alt={"Couverture qui illustre une de nos salade"}/>
+                     loading="eager" src={img} alt={"Couverture qui illustre une de nos salade"}/>
                 <h2 className={"couverture-title"}>Nos photos</h2>
             </div>
 
             <div className="imageGallery">
-                {images.map((image, index) => {
+                {imageList.map((image: string | undefined, index: Key | null | undefined) => {
                         return (
                             <img
                                 className={"rounded img"}

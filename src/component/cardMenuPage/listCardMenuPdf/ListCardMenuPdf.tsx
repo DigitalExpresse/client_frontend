@@ -1,7 +1,7 @@
 import React from 'react';
 import imgCardBodeguita from "../../../assets/images/tapas-section.webp";
 import imgCardRestaurant from "../../../assets/images/_X5A3430.webp";
-import imgCardBoisson from "../../../assets/images/card-boisson.webp";
+import imgCardBoisson from "../../../assets/images/diapo6.webp";
 import './listCardMenuPdf.css';
 
 const MenuCard = ({ title, imagePath, pdfPath }: any) => {

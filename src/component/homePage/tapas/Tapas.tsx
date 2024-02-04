@@ -1,13 +1,17 @@
 import React from 'react';
 import textSection from "../../../dataBrut/textSection.json";
-import img from "../../../assets/images/_X5A3411.webp";
 
 const Tapas = () => {
+
+    // @ts-ignore
+    const imagesDiapo = require.context('../../../assets/images', false, /aboutUs2.*\.(png|jpe?g|svg|webp)$/);
+    const image = imagesDiapo.keys().map((image: any) => imagesDiapo(image))[0];
+
     return (
         <section className="text-white min-h-300px lg:max-h-350px mt-3 px-3 md:!px-8 flex flex-col-reverse relative gap-3 sm:flex-row w-full">
 
             <div className="sm:w-1/2">
-                <img alt="About us" src={img} className="h-full w-full object-cover flex justify-center rounded"/>
+                <img alt="About us" src={image} className="h-full w-full object-cover flex justify-center rounded"/>
             </div>
 
             <div className="bg-primaire py-6 px-6 min-h-100px sm:w-1/2 rounded">

@@ -16,7 +16,7 @@ export const handleClose = (setSelectedImage: React.Dispatch<React.SetStateActio
     setSelectedImage('');
 };
 
-export const handleClick = (image: string, setSelectedImage: React.Dispatch<React.SetStateAction<string>>) => {
+export const handleClick = (image: string | undefined , setSelectedImage: React.Dispatch<React.SetStateAction<string | undefined>>) => {
     setSelectedImage(image);
 };
 
