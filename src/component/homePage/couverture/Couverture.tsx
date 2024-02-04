@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {ReservationContext} from "../../../context/ReservationContext";
 import './couverture.css';
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
-import textSection from "../../../dataBrut/textSection.json";
+import textSection from "../../../dataBrut/text.json";
 
 const Couverture = () => {
 

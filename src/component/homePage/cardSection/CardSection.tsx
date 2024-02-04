@@ -1,5 +1,5 @@
 import React from 'react';
-import textSection from "../../../dataBrut/textSection.json";
+import textSection from "../../../dataBrut/text.json";
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import {Link} from "react-router-dom";
 import './cardSection.css';

@@ -54,3 +54,8 @@ npm install
 ```bash
 npm run build
 ```
+
+#### * Si la commande npm n'est pas reconnue, vous pouvez essayer la commande suivante, puis réessayer les commandes précédentes
+```bash
+source ~/.nvm/nvm.sh
+```

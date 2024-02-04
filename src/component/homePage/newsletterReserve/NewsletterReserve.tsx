@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {ReservationContext} from "../../../context/ReservationContext";
-import textSection from "../../../dataBrut/textSection.json";
+import textSection from "../../../dataBrut/text.json";
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import LoaderBasic from "../../../commonComponent/loader/LoaderBasic";
 

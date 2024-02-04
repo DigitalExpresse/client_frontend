@@ -1,5 +1,5 @@
 import React from "react";
-import textSection from "../../../dataBrut/textSection.json";
+import textSection from "../../../dataBrut/text.json";
 
 const AboutUs = () => {
 
