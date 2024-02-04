@@ -1,6 +1,6 @@
 import React from 'react';
 import textSection from "../../../dataBrut/textSection.json";
-import img from "../../../assets/images/tapas-section-test.png";
+import img from "../../../assets/images/_X5A3411.webp";
 
 const Tapas = () => {
     return (
