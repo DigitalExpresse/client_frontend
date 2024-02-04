@@ -2,6 +2,23 @@ import React from 'react';
 import './infoPractice.css';
 
 const InfoPractice = () => {
+
+    // @ts-ignore
+    const imagesDiapo = require.context('../../../assets/images', false, /infoPractice.*\.(png|jpe?g|svg|webp)$/);
+    const image = imagesDiapo.keys().map((image: any) => imagesDiapo(image))[0];
+
+    let backgroundImageStyle = {};
+
+    if (image !== undefined && image !== "") {
+        backgroundImageStyle = {
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+        };
+    }
+
+
     return (
 
         <section className="section-card text-white my-4 px-3 md:!px-8 flex flex-col md:flex-row-reverse gap-3 relative">
@@ -28,7 +45,13 @@ const InfoPractice = () => {
                 </div>
             </article>
 
-            <article className="infoPractice-img min-h-200px !bg-cover object-cover flex justify-center w-full md:w-1/2 rounded"></article>
+
+                    <article
+                        className={"min-h-200px flex justify-center w-full md:w-1/2 rounded"}
+                        style={backgroundImageStyle}>
+                    </article>
+
+
 
         </section>
     );

@@ -1,6 +1,6 @@
 import {fetchCards} from "./card/CardApi";
 import Navbar from "../../commonComponent/navbar/Navbar";
-import CouvertureCard from "./couvertureCard/CouvertureCard";
+import CouvertureCardMenu from "./couvertureCard/CouvertureCardMenu";
 import NavigationCardsMenus from "./navigationCardMenu/NavigationCardsMenus";
 import {fetchMenus} from "./menu/MenuApi";
 import React from "react";
@@ -33,7 +33,7 @@ const CardMenuPage = () => {
     return (
         <>
             <Navbar />
-            <CouvertureCard />
+            <CouvertureCardMenu />
 
             <div className={process.env.REACT_APP_CARD_ONLY_PDF === "true" ? "mt-20" : "mt-12"}></div>
 

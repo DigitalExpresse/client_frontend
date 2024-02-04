@@ -11,9 +11,21 @@ const Couverture = () => {
     const imagesDiapo = require.context('../../../assets/images', false, /couverture.*\.(png|jpe?g|svg|webp)$/);
     const image = imagesDiapo.keys().map((image: any) => imagesDiapo(image))[0];
 
+    let backgroundImageStyle = {};
+
+    if (image !== undefined && image !== "") {
+        backgroundImageStyle = {
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+        };
+    }
+
     return (
         <section
-            className={"background-couverture rounded relative top-12 mx-3 md:!mx-8 font-extrabold" + (image !== undefined ? " bg-[url('../assets/images/couverture.webp')]" : "")}
+            className={"background-couverture rounded relative top-12 mx-3 md:!mx-8 font-extrabold"}
+            style={backgroundImageStyle}
             id="home"
         >
 
