@@ -34,16 +34,20 @@ const CardMenuPage = () => {
         <>
             <Navbar />
             <CouvertureCard />
+
             <div className={process.env.REACT_APP_CARD_ONLY_PDF === "true" ? "mt-20" : "mt-12"}></div>
+
             {process.env.REACT_APP_CARD_ONLY_PDF === "false" && <NavigationCardsMenus />}
+
             <p className={"cardMenu-description"}>Notre cuisine est maison, élaborée à partir de produits de qualité.</p>
-            {process.env.REACT_APP_CARD_ONLY_PDF === "true" && <ListCardMenuPdf />}
             {process.env.REACT_APP_CARD_ONLY_PDF === "false" &&
                 <>
                     {renderCardsElements(cards)}
                     {renderMenusElements(menus)}
                 </>
             }
+            {process.env.REACT_APP_CARD_ONLY_PDF === "true" && <ListCardMenuPdf />}
+
             <NewsletterReserve />
             <Footer />
             <ScrollToTopButton />
