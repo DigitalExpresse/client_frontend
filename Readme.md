@@ -10,6 +10,9 @@ Créez un fichier `.env` en vous basant sur le fichier `.env.example`. Vous n'au
 
 Pour run le projet en développement :
 ```bash
+npm install
+```
+```bash
 npm run start
 ```
 
