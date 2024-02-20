@@ -12,6 +12,7 @@ import Footer from "../../commonComponent/footer/Footer";
 import ScrollToTopButton from "../../commonComponent/scrollToTopOfPage/ScrollToTopButton";
 import card_menu from "../../dataBrut/carte_menu.json";
 import './cardMenuPage.css';
+import settingWebsite from '../../dataBrut/settingWebsite.json';
 
 const CardMenuPage = () => {
 
@@ -35,18 +36,18 @@ const CardMenuPage = () => {
             <Navbar />
             <CouvertureCardMenu />
 
-            <div className={process.env.REACT_APP_CARD_ONLY_PDF === "true" ? "mt-20" : "mt-12"}></div>
+            <div className={settingWebsite.cardMenuFormat === "pdf" ? "mt-20" : "mt-12"}></div>
 
-            {process.env.REACT_APP_CARD_ONLY_PDF === "false" && <NavigationCardsMenus />}
+            {settingWebsite.cardMenuFormat !== "pdf" && <NavigationCardsMenus />}
 
             <p className={"cardMenu-description"}>Notre cuisine est maison, élaborée à partir de produits de qualité.</p>
-            {process.env.REACT_APP_CARD_ONLY_PDF === "false" &&
+            {settingWebsite.cardMenuFormat !== "pdf" &&
                 <>
                     {renderCardsElements(cards)}
                     {renderMenusElements(menus)}
                 </>
             }
-            {process.env.REACT_APP_CARD_ONLY_PDF === "true" && <ListCardMenuPdf />}
+            {settingWebsite.cardMenuFormat === "pdf" && <ListCardMenuPdf />}
 
             <NewsletterReserve />
             <Footer />

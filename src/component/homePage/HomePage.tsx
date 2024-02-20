@@ -23,7 +23,7 @@ const HomePage = () => {
         <Couverture />
         <AboutUs />
         <Tapas />
-        {/*On place l'id horaires pour qu'au clic sur le bouton de la navbar, on puisse scroller jusqu'à cette div
+        {/*On place l'id horaires pour qu'au clic sur le bouton de la navbar (horaire), on puisse scroller jusqu'à cette div
         car sinon ca n'atterit pas au bon endroit ( a cause de la couverture qui est en position absolute)*/}
         <div id={"horaires"}></div>
         <CardSection />
