@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {renderProductsWithoutCategory} from "../product/ProductService";
-import api from "../../../dataBrut/carte_menu.json";
+import api from "../../../dataBrut/carteMenu.json";
 import {fetchCategoryByMenuId, fetchMenuProduct} from "./MenuApi";
 import {renderMenuProductsWithCategory} from "./MenuService";
 import settingWebsite from "../../../dataBrut/settingWebsite.json";

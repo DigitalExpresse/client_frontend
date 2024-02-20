@@ -1,6 +1,6 @@
 import React from 'react';
 import {fetchProductById} from "./ProductApi";
-import api from "../../../dataBrut/carte_menu.json";
+import api from "../../../dataBrut/carteMenu.json";
 import settingWebsite from "../../../dataBrut/settingWebsite.json";
 
 const Product = ({productData}: any) => {

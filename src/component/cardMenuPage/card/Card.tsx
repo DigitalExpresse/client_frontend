@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {renderCardProductsWithCategory} from "./CardService";
 import {renderProductsWithoutCategory} from "../product/ProductService";
 import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
-import carte_menu from "../../../dataBrut/carte_menu.json";
+import carte_menu from "../../../dataBrut/carteMenu.json";
 import "./card.css";
 import settingWebsite from "../../../dataBrut/settingWebsite.json";
 

@@ -10,7 +10,7 @@ import {renderMenusElements} from "./menu/MenuService";
 import NewsletterReserve from "../homePage/newsletterReserve/NewsletterReserve";
 import Footer from "../../commonComponent/footer/Footer";
 import ScrollToTopButton from "../../commonComponent/scrollToTopOfPage/ScrollToTopButton";
-import card_menu from "../../dataBrut/carte_menu.json";
+import card_menu from "../../dataBrut/carteMenu.json";
 import './cardMenuPage.css';
 import settingWebsite from '../../dataBrut/settingWebsite.json';
 
