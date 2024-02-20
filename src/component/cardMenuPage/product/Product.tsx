@@ -1,6 +1,7 @@
 import React from 'react';
 import {fetchProductById} from "./ProductApi";
 import api from "../../../dataBrut/carte_menu.json";
+import settingWebsite from "../../../dataBrut/settingWebsite.json";
 
 const Product = ({productData}: any) => {
 
@@ -8,7 +9,7 @@ const Product = ({productData}: any) => {
 
     React.useEffect(() => {
 
-        if(process.env.REACT_APP_DATA_MODE === 'static') setProduct(api.products.find((product: any) => product.id === productData.productId))
+        if(settingWebsite.dataMode === 'static') setProduct(api.products.find((product: any) => product.id === productData.productId))
         else fetchProductById(productData.productId).then((res) => setProduct(res))
     }, [])
 

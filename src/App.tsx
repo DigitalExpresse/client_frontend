@@ -10,6 +10,7 @@ import ImageGalleryPage from "./component/imageGalleryPage.tsx/ImageGalleryPage"
 import PoliticCookie from "./component/legalsPage/PoliticCookie";
 import PoliticConfidentiality from "./component/legalsPage/PoliticConfidentiality";
 import MentionLegalCgu from "./component/legalsPage/MentionLegalCgu";
+import settingWebsite from "./dataBrut/settingWebsite.json";
 import './styles/index.css';
 import './styles/animations.css';
 
@@ -28,7 +29,7 @@ function App() {
     return (
 
         <div>
-            {process.env.REACT_APP_DATA_MODE !== "static" && <Reservation/>}
+            {settingWebsite.dataMode !== "static" && <Reservation/>}
             <BrowserRouter>
                 <ScrollToTopAuto/>
                 <Routes>

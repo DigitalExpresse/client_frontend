@@ -1,61 +1,28 @@
-# Documentation pour déploiement
-
 ## Prérequis
-Avant de commencer le déploiement, assurez-vous que votre système dispose des éléments suivants :
 
-- [Node.js](https://nodejs.org/en/)
-- [Git](https://git-scm.com/)
-- **Npm (installé avec Node.js)**
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
 
-## Configuration
-### 1. Cloner le projet
+- **Node.js / Npm (version 21.6.1)**
+
+Créez un fichier `.env` en vous basant sur le fichier `.env.example`. Vous n'aurez pas besoin de mettre à jour les variables.
+
+## Mise en Route
+
+Pour run le projet en développement :
 ```bash
-git clone 
-```
-###
-### 2. Fichier `.env`
-#### Créer un fichier `.env` à la racine du projet
-#### Remplir le fichier `.env` avec les informations nécessaires
-```env
-REACT_APP_API_URL=http://localhost:3001
-REACT_APP_DOMAIN=https://restaurant-lebouddoir-aix.fr
-REACT_APP_DATA_MODE=static
-REACT_APP_CARD_ONLY_PDF=true
+npm run start
 ```
 
-#### Explications des variables
-- `REACT_APP_API_URL` : URL de l'API
-- `REACT_APP_DOMAIN` : URL du site web
-- `REACT_APP_DATA_MODE` : Mode de récupération des données (static ou dynamic)
-- `REACT_APP_CARD_ONLY_PDF` : Afficher uniquement les cartes en PDF (true ou false)
 
-###
-### 3. Fichier `.htaccess`
-#### Créer un fichier `.htaccess` à la racine du projet (si il n'existe pas déjà)
-#### Ajouter le code suivant dans le fichier `.htaccess`
+## Branches
 
-```.htaccess
-RewriteEngine On
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-RewriteRule ^ - [L]
 
-RewriteRule ^ /index.html [L]
-```
+#### "develop" 📡
 
-###
-## Déploiement
-#### 1. Installer les dépendances
-```bash
-npm install
-```
+Cette branche est utilisée comme branche de développement principale. Toutes les fonctionnalités en cours de développement sont fusionnées dans cette branche. Il est recommandé de créer une branche séparée pour chaque nouvelle fonctionnalité ou tâche et de les fusionner dans la branche develop une fois qu'elles sont terminées et testées.
 
-#### 2. Lancer l'application
-```bash
-npm run build
-```
+#### "main" 🚀
 
-#### * Si la commande npm n'est pas reconnue, vous pouvez essayer la commande suivante, puis réessayer les commandes précédentes
-```bash
-source ~/.nvm/nvm.sh
-```
+Cette branche représente la base stable du code. Elle est utilisée pour les déploiements en production. Les fonctionnalités sont fusionnées dans cette branche depuis la branche develop lorsque le code est prêt à être publié.
+
+

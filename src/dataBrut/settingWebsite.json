@@ -1,3 +1,4 @@
 {
-  "cardMenuFormat": "pdf"
+  "cardMenuFormat": "pdf",
+  "dataMode": "static"
 }

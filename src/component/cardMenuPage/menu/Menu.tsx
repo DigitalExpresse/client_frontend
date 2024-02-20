@@ -3,6 +3,7 @@ import {renderProductsWithoutCategory} from "../product/ProductService";
 import api from "../../../dataBrut/carte_menu.json";
 import {fetchCategoryByMenuId, fetchMenuProduct} from "./MenuApi";
 import {renderMenuProductsWithCategory} from "./MenuService";
+import settingWebsite from "../../../dataBrut/settingWebsite.json";
 
 const Menu = ({menuData}: any) => {
     const [menuProducts, setMenuProducts] = useState<any>([]);
@@ -12,7 +13,7 @@ const Menu = ({menuData}: any) => {
     const isFirstCategoryNull = hasCategories && categories[0].category === null;
 
     useEffect(() => {
-        if (process.env.REACT_APP_DATA_MODE === "static") {
+        if (settingWebsite.dataMode === "static") {
             setMenuProducts(api.menusProduct);
             setCategories(api.menus.filter((menu: any) => menu.id === menuData.id)[0].categories);
             return;

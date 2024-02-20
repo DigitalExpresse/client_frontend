@@ -20,7 +20,7 @@ const CardMenuPage = () => {
     const [menus, setMenus] = React.useState<any>([]);
 
     React.useEffect(() => {
-        if(process.env.REACT_APP_DATA_MODE === "static") {
+        if(settingWebsite.dataMode === "static") {
             setCards(card_menu.cards);
             setMenus(card_menu.menus);
         }

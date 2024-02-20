@@ -4,6 +4,7 @@ import api from "../../../dataBrut/carte_menu.json";
 import {fetchCards} from "../card/CardApi";
 import {fetchMenus} from "../menu/MenuApi";
 import {renderCardsAndMenuTitleForNavigation} from "./NavigationCardsService";
+import settingWebsite from "../../../dataBrut/settingWebsite.json";
 const NavigationCardsMenus = () => {
 
     const [cardsAndMenus, setCardsAndMenus] = React.useState<any>([]);
@@ -11,7 +12,7 @@ const NavigationCardsMenus = () => {
 
     React.useEffect(() => {
 
-        if (process.env.REACT_APP_DATA_MODE === "static") setCardsAndMenus(Array.prototype.concat(api.cards, api.menus))
+        if (settingWebsite.dataMode === "static") setCardsAndMenus(Array.prototype.concat(api.cards, api.menus))
         else {
             fetchCards().then((res) => {
                 fetchMenus().then((res2) => {

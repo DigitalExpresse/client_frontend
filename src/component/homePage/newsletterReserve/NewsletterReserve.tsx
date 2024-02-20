@@ -3,6 +3,7 @@ import {ReservationContext} from "../../../context/ReservationContext";
 import textSection from "../../../dataBrut/text.json";
 import restaurantInfo from "../../../dataBrut/restaurantInfo.json";
 import LoaderBasic from "../../../commonComponent/loader/LoaderBasic";
+import settingWebsite from "../../../dataBrut/settingWebsite.json";
 
 const NewsletterReserve = () => {
 
@@ -34,7 +35,7 @@ const NewsletterReserve = () => {
                 <hr className="w-40 m-auto"/>
                 <div className="flex flex-col mt-4">
                     <p className="text-center opacity-80 max-w-sm m-auto">{textSection.newsletterReserveText}</p>
-                    { process.env.REACT_APP_DATA_MODE === 'static' ?
+                    { settingWebsite.dataMode === 'static' ?
                         <a href={"tel:" + restaurantInfo.telNumber} className="text-center rounded px-3 py-1 mt-4 sm:!mt-10 mx-auto w-60 text-md border border-white relative bg-secondaire uppercase">Reservez une table</a>
                         :
                         <button onClick={() => setModalReservationOpen(true)} className="px-3 py-1 rounded mt-4 sm:!mt-10 mx-auto w-60 text-md border border-white relative bg-secondaire">Reserver une table</button>

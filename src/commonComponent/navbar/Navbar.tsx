@@ -4,6 +4,7 @@ import {ReservationContext} from "../../context/ReservationContext";
 import {Link} from "react-router-dom";
 import {linkScrollToElementOnOtherPage} from "../../utils/linkScrollToElementOnOtherPage";
 import restaurantInfo from "../../dataBrut/restaurantInfo.json";
+import settingWebsite from "../../dataBrut/settingWebsite.json";
 
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
                         <Link className="m-2 font-bold hover:text-tertiary" to="/" onClick={() => linkScrollToElementOnOtherPage('horaires')}>Accès / Contact</Link>
                     </div>
 
-                    { process.env.REACT_APP_DATA_MODE === 'static' ?
+                    { settingWebsite.dataMode === 'static' ?
                         <a href={"tel:" + restaurantInfo.telNumber} className="uppercase mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
                         :
                         <button onClick={() => setModalReservationOpen(true)} className="mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
@@ -55,7 +56,7 @@ const Navbar = () => {
                         </Link>
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
-                        { process.env.REACT_APP_DATA_MODE === 'static' ?
+                        { settingWebsite.dataMode === 'static' ?
                             <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto rounded w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
                             :
                             <button onClick={() => {

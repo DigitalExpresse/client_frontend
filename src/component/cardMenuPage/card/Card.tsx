@@ -4,6 +4,7 @@ import {renderProductsWithoutCategory} from "../product/ProductService";
 import {fetchCardProduct, fetchCategoryByCardId} from "./CardApi";
 import carte_menu from "../../../dataBrut/carte_menu.json";
 import "./card.css";
+import settingWebsite from "../../../dataBrut/settingWebsite.json";
 
 const Card = ({cardData}: any) => {
     const [cardProducts, setCardProducts] = useState<any>([]);
@@ -13,7 +14,7 @@ const Card = ({cardData}: any) => {
     const isFirstCategoryNull = hasCategories && categories[0].category === null;
 
     useEffect(() => {
-        if (process.env.REACT_APP_DATA_MODE === "static") {
+        if (settingWebsite.dataMode === "static") {
             setCardProducts(carte_menu.cardsProduct);
             setCategories(carte_menu.cards.filter((card: any) => card.id === cardData.id)[0].categories);
             return;
