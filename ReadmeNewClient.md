@@ -5,7 +5,7 @@
 ### Pour les horaires d'ouverture
 #### Fichier src/dataBrut/openningHours.json
 
-### Pour les informations sur les cartes et les menus
+### Pour les informations sur les cartes et les menu
 #### Fichier src/dataBrut/carte_menu.json
 
 ### Pour les textes des différentes pages
