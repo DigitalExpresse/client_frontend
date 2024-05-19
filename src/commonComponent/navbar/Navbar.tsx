@@ -5,6 +5,8 @@ import {Link} from "react-router-dom";
 import {linkScrollToElementOnOtherPage} from "../../utils/linkScrollToElementOnOtherPage";
 import restaurantInfo from "../../dataBrut/restaurantInfo.json";
 import settingWebsite from "../../dataBrut/settingWebsite.json";
+import ToggleMenu from "../../assets/icons/toggleMenu";
+import Close from "../../assets/icons/close";
 
 
 const Navbar = () => {
@@ -38,8 +40,8 @@ const Navbar = () => {
                         <button onClick={() => setModalReservationOpen(true)} className="mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
                     }
 
-                    <i className={!navbarOpen ? "bi bi-list text-3xl hover:cursor-pointer sm:hidden" : "hidden"} onClick={() => setNavbarOpen(!navbarOpen)}></i>
-                    <i className={navbarOpen ? "bi bi-x text-3xl hover:cursor-pointer sm:hidden animation-fadeIn" : "hidden"} onClick={() => closeNavbar()}></i>
+                    <i className={!navbarOpen ? "bi bi-list text-3xl hover:cursor-pointer sm:hidden" : "hidden"} onClick={() => setNavbarOpen(!navbarOpen)}><ToggleMenu/></i>
+                    <i className={navbarOpen ? "bi bi-x text-3xl hover:cursor-pointer sm:hidden animation-fadeIn" : "hidden"} onClick={() => closeNavbar()}><Close/></i>
                 </div>
 
                 {/*  Au clic du de l'icone menu, on affiche le menu burger  */}
