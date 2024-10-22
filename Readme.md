@@ -6,7 +6,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 
 Créez un fichier `.env` en vous basant sur le fichier `.env.example`. Vous n'aurez pas besoin de mettre à jour les variables.
 
-## Mise en Route
+## Mise en Route 
 
 Pour run le projet en développement :
 ```bash
