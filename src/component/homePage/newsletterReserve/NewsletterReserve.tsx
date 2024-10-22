@@ -32,11 +32,10 @@ const NewsletterReserve = () => {
 
             <article className="min-h-250px md:w-1/2 rounded bg-secondaire p-6 md:px-16 xl:px-36">
                 <h3 className="text-xl text-center pb-2 2xl:pb-6 md:text-3xl">{textSection.newsletterReserveTitle}</h3>
-                <hr className="w-40 m-auto"/>
                 <div className="flex flex-col mt-4">
                     <p className="text-center opacity-80 max-w-sm m-auto">{textSection.newsletterReserveText}</p>
                     { settingWebsite.dataMode === 'static' ?
-                        <a href={"tel:" + restaurantInfo.telNumber} className="text-center rounded px-3 py-1 mt-4 sm:!mt-10 mx-auto w-60 text-md border border-white relative bg-secondaire uppercase">Reservez une table</a>
+                        <a href={"tel:" + restaurantInfo.fixNumber} className="text-center rounded px-3 py-1 mt-4 sm:!mt-10 mx-auto w-60 text-md border border-white relative bg-secondaire uppercase">Reservez une table</a>
                         :
                         <button onClick={() => setModalReservationOpen(true)} className="px-3 py-1 rounded mt-4 sm:!mt-10 mx-auto w-60 text-md border border-white relative bg-secondaire">Reserver une table</button>
                     }
@@ -45,7 +44,6 @@ const NewsletterReserve = () => {
 
             <article className="min-h-250px md:w-1/2 rounded bg-primaire p-6 md:px-16 xl:px-36">
                 <h3 className="text-xl text-center mb-3 2xl:pb-6 md:text-3xl">Newsletter</h3>
-                <hr className="w-40 m-auto"/>
 
                 <div className="flex flex-col max-w-sm mx-auto">
                     <p className="text-center opacity-80 mb-4">{textSection.newsletterText}</p>

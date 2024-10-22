@@ -66,7 +66,7 @@ const FirstFormReservation = ({ setFormReservation }: any) => {
                 <p className="text-center text-white">Pour réserver c'est ici</p>
                 <p className="text-center mb-2 text-white">Cela vous prendra moins d'une minute ! 🚀 </p>
                 <p className="text-center text-white mb-3 max-w-sm">
-                    Au delà de 10 couverts, veuillez nous contacter par téléphone au <b><a href={`tel:${restaurantInfo.telNumber}`}>{restaurantInfo.telNumber}</a></b>
+                    Au delà de 10 couverts, veuillez nous contacter par téléphone au <b><a href={`tel:${restaurantInfo.fixNumber}`}>{restaurantInfo.fixNumber}</a></b>
                 </p>
                 <div className="flex flex-col md:flex-row">
                     <div className="relative m-1 fadeIn">

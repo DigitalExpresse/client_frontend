@@ -38,16 +38,26 @@ const HoraireContact = () => {
                         <a rel={"noreferrer"} target={"_blank"} href={restaurantInfo.googleMapsUrl}
                            className={"mx-auto opacity-80"}>Google Maps</a>
                     </div>
-                    <div>
-                        <i className="bi bi-telephone-fill opacity-80 text-md mx-2"></i>
-                        <a href={"tel:" + restaurantInfo.telNumber}
-                           className="opacity-80">{restaurantInfo.telNumber}</a>
+                    <div className={"flex flex-col md:flex-row gap-2"}>
+                        <div>
+                            <i className="bi bi-telephone-fill opacity-80 text-md mx-2"></i>
+                            <a href={"tel:" + restaurantInfo.fixNumber}
+                               className="opacity-80">{restaurantInfo.fixNumber}</a>
+                        </div>
+                        <div>
+                            <i className="bi bi-telephone-fill opacity-80 text-md mx-2"></i>
+                            <a href={"tel:" + restaurantInfo.telNumber}
+                               className="opacity-80">{restaurantInfo.telNumber}</a>
+                        </div>
                     </div>
+
                     <div className="flex justify-center ml-3 mt-3">
-                        <a rel={"noreferrer"} target={"_blank"} className={"instagram-logo"} href={String(restaurantInfo.socialNetworks[0].url)}>
-                            <i className="bi bi-instagram text-2xl mx-2"></i>
+                        <a rel={"noreferrer"} target={"_blank"} className={"instagram-logo"}
+                           href={String(restaurantInfo.socialNetworks[0].url)}>
+                        <i className="bi bi-instagram text-2xl mx-2"></i>
                         </a>
-                        <a rel={"noreferrer"} target={"_blank"} className={"'facebook-logo"} href={String(restaurantInfo.socialNetworks[1].url)}>
+                        <a rel={"noreferrer"} target={"_blank"} className={"'facebook-logo"}
+                           href={String(restaurantInfo.socialNetworks[1].url)}>
                             <i className="bi bi-facebook text-2xl mx-2"></i>
                         </a>
                     </div>

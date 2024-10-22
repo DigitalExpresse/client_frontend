@@ -35,13 +35,13 @@ const Navbar = () => {
                     </div>
 
                     { settingWebsite.dataMode === 'static' ?
-                        <a href={"tel:" + restaurantInfo.telNumber} className="uppercase mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
+                        <a href={"tel:" + restaurantInfo.fixNumber} className="uppercase mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</a>
                         :
                         <button onClick={() => setModalReservationOpen(true)} className="mx-3 rounded border-2 px-2 py-1 border-black bg-primaire text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-tertiary hover:!border-tertiary transition ease-in-out duration-200 tracking-widest">Reservez</button>
                     }
 
-                    <i className={!navbarOpen ? "bi bi-list text-3xl hover:cursor-pointer sm:hidden" : "hidden"} onClick={() => setNavbarOpen(!navbarOpen)}><ToggleMenu/></i>
-                    <i className={navbarOpen ? "bi bi-x text-3xl hover:cursor-pointer sm:hidden animation-fadeIn" : "hidden"} onClick={() => closeNavbar()}><Close/></i>
+                    <i className={!navbarOpen ? "text-3xl hover:cursor-pointer sm:hidden" : "hidden"} onClick={() => setNavbarOpen(!navbarOpen)}><ToggleMenu/></i>
+                    <i className={navbarOpen ? "text-3xl hover:cursor-pointer sm:hidden animation-fadeIn" : "hidden"} onClick={() => closeNavbar()}><Close/></i>
                 </div>
 
                 {/*  Au clic du de l'icone menu, on affiche le menu burger  */}
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <Link to={'/galerie'} className="block py-2 font-bold md:hover:text-tertiary" onClick={() => setNavbarOpen(false)}>Photos</Link>
 
                         { settingWebsite.dataMode === 'static' ?
-                            <a href={"tel:" + restaurantInfo.telNumber} className="block mx-auto rounded w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
+                            <a href={"tel:" + restaurantInfo.fixNumber} className="block mx-auto rounded w-36 border-2 my-3 px-2 py-1 border-white text-xs text-white font-bold hover:cursor-pointer sm:!mr-0 hover:bg-white hover:!border-white hover:!text-black transition ease-in-out duration-200 uppercase tracking-widest">Reservez</a>
                             :
                             <button onClick={() => {
                                 setModalReservationOpen(true)

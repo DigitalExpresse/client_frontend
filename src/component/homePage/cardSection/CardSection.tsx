@@ -35,7 +35,6 @@ const CardSection = () => {
 
                 <article className="bg-primaire rounded p-6 sm:min-h-150px w-full sm:w-1/2">
                     <h2 className="text-center mb-3 text-xl md:text-3xl">{restaurantInfo.name}</h2>
-                    <hr className="w-40 m-auto"/>
                     {/*    Une phrase d'accroche pour présenter les cartes*/}
                     <p className="section-card-text text-white opacity-70 text-center">
                         {textSection.cardTextFirst}

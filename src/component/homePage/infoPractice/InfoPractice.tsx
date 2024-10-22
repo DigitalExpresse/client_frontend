@@ -24,7 +24,6 @@ const InfoPractice = () => {
 
             <article className="bg-secondaire px-3 py-6 min-h-100px sm:min-h-150px rounded md:w-1/2">
                 <h2 className="text-center text-xl pb-2 sm:text-3xl">Infos pratiques</h2>
-                <hr className="w-40 m-auto"/>
                 <div className="text-center py-3 px-4  lg:!px-10 text-white opacity-70">
                     <div className="flex justify-center flex-wrap items-center">
                         <p className="mr-3">Règlements par CB / Espèces</p>
