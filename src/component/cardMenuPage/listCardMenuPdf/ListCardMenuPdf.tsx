@@ -1,7 +1,7 @@
 import React from 'react';
-import imgCardBodeguita from "../../../assets/images/aboutUs2.webp";
+import imgCardCocktail from "../../../assets/images/diapo6.webp";
 import imgCardRestaurant from "../../../assets/images/_X5A3430.webp";
-import imgCardBoisson from "../../../assets/images/diapo6.webp";
+import imgCardBoisson from "../../../assets/images/_X5A3307.webp";
 import './listCardMenuPdf.css';
 
 const MenuCard = ({ title, imagePath, pdfPath }: any) => {
@@ -22,9 +22,9 @@ const MenuCard = ({ title, imagePath, pdfPath }: any) => {
 
 export const ListCardMenuPdf = () => {
     const menuItems = [
-        { title: 'Carte des Tapas', imagePath: imgCardBodeguita, pdfPath: '../../assets/pdf/carte_la_bodeguita.pdf' },
+        { title: 'Carte des Cocktails', imagePath: imgCardCocktail, pdfPath: '../../assets/pdf/carte_cocktail.pdf' },
         { title: 'Carte du Restaurant', imagePath: imgCardRestaurant, pdfPath: '../../assets/pdf/carte_le_bouddoir.pdf' },
-        { title: 'Carte des Boissons', imagePath: imgCardBoisson, pdfPath: '../../assets/pdf/la_carte_boisson.pdf' },
+        { title: 'Carte des Boissons / Alcools', imagePath: imgCardBoisson, pdfPath: '../../assets/pdf/la_carte_boisson.pdf' },
     ];
 
     return (
