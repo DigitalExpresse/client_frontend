@@ -40,7 +40,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Checkout Docker files repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: DigitalExpresse/docker
           path: dockerfiles
