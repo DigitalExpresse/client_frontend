@@ -12,7 +12,7 @@ Pour run le projet en développement :
 ```bash
 npm install
 ```
-```bash
+```bash 
 npm run start
 ```
 
