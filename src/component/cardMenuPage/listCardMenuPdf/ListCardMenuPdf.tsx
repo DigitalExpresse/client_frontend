@@ -22,9 +22,9 @@ const MenuCard = ({ title, imagePath, pdfPath }: any) => {
 
 export const ListCardMenuPdf = () => {
     const menuItems = [
-        { title: 'Carte des Cocktails', imagePath: imgCardCocktail, pdfPath: '../../assets/pdf/carte_cocktail.pdf' },
-        { title: 'Carte du Restaurant', imagePath: imgCardRestaurant, pdfPath: '../../assets/pdf/carte_le_bouddoir.pdf' },
-        { title: 'Carte des Boissons / Alcools', imagePath: imgCardBoisson, pdfPath: '../../assets/pdf/la_carte_boisson.pdf' },
+        { title: 'Carte des Cocktails', imagePath: imgCardCocktail, pdfPath: '../../assets/pdf/carte_cocktaill.pdf' },
+        { title: 'Carte du Restaurant', imagePath: imgCardRestaurant, pdfPath: '../../assets/pdf/carte_le_bouddoirr.pdf' },
+        { title: 'Carte des Boissons / Alcools', imagePath: imgCardBoisson, pdfPath: '../../assets/pdf/la_carte_boissonn.pdf' },
     ];
 
     return (
